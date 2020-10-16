@@ -1,4 +1,9 @@
 ## CHANGELOG.md
+
+## 1.2.0
+* Add member's absences in a calendar view
+* Add listWithMoment() function to absence service
+
 ## 1.1.0
 * Add absence service
 * Add members service
