@@ -1,0 +1,67 @@
+{
+  "name": "employees-abstences",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "coverage:ci": "CI=true npm test -- --ci --coverage",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext js,jsx src/",
+    "lint:ci": "CI=true eslint --format junit -o test-results/eslint/results.xml --ext js,jsx src/",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "test:ci": "CI=true npm run test -- --ci --reporters='default' --reporters='jest-junit'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "@haensl"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@haensl/eslint-config": "^1.3.0",
+    "@haensl/services": "^1.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "fetch-mock": "^9.10.7",
+    "jest-junit": "^12.0.0"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "test-results/jest",
+    "outputName": "results.xml",
+    "suitName": "b2b posting unit tests"
+  }
+}
