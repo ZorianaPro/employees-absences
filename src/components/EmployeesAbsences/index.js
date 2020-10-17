@@ -2,9 +2,9 @@ import React, { useEffect, useState, useCallback } from 'react';
 import absencesService from '../../services/absences';
 import membersService from '../../services/members';
 import Timeline  from 'react-calendar-timeline';
-import 'react-calendar-timeline/lib/Timeline.css';
+import iCalendarService from '../../services/iCalendar';
 import moment from 'moment';
-import iCalendarService from '../../services/iCalendar'
+import 'react-calendar-timeline/lib/Timeline.css';
 import './EmployeesAbsences.css';
 
 const EmployeesAbsences = () => {
@@ -17,8 +17,8 @@ const EmployeesAbsences = () => {
       const responceMembers = membersService.list();
       setAbsences(responceAbsences);
       setMembers(responceMembers);
-    } catch (e) {
-      console.log(e);
+    } catch (error) {
+      console.log(error);
     }
   }, []);
 
@@ -26,9 +26,12 @@ const EmployeesAbsences = () => {
     try {
       const absencesToExport = await absencesService.listWithMembers(members);
       console.log(absencesToExport);
-      iCalendarService.link({absences: absencesToExport, filename: 'download.ics'})
-    } catch (e) {
-      console.log(e);
+      iCalendarService.link({
+        absences: absencesToExport,
+        filename: 'download.ics'
+      });
+    } catch (error) {
+      console.log(error);
     }
   }, [members]);
 

@@ -22,7 +22,7 @@ export const listWithMembers = (members) =>
       || null;
     return {
       ...event,
-      user: memberObject,
+      user: memberObject
     };
   });
 

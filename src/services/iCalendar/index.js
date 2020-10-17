@@ -13,20 +13,19 @@ const formatDate = (dateString) => {
     pad(dateTime.getUTCDate()),
     'T',
     pad(dateTime.getUTCHours()),
-    pad(dateTime.getUTCMinutes()) + '00Z'
+    pad(`${dateTime.getUTCMinutes()}00Z`)
   ].join('');
 };
 
 const buildUrl = (absences, useDataURL) => {
-  if (useDataURL === 0) { useDataURL = false; }
   const url = [
-    "BEGIN:VCALENDAR",
-    "VERSION:2.0",
-    "PRODID:-//Eventful//Eventful 2.0//EN"
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Eventful//Eventful 2.0//EN'
   ];
-  absences.map((absence) => {
+  absences.map((absence) =>
     url.push(
-      `BEGIN:VEVENT`,
+      'BEGIN:VEVENT',
       `UID:${absence.id}`,
       `DTSTAMP:${formatDate(absence.createdAt)}`,
       `URL:${document.URL}`,
@@ -35,17 +34,16 @@ const buildUrl = (absences, useDataURL) => {
       `SUMMARY:${absence.user[0].name} is ${absence.type === 'vacation' ? 'on vacation' : 'sick'} today`,
       `DESCRIPTION:${absence.memberNote}`,
       `STATUS:${absence.confirmedAt ? 'CONFIRMED' : 'TENTATIVE'}`,
-      `END:VEVENT`
-    );
-  });
+      'END:VEVENT'
+    )
+  );
   url.push(
     'END:VCALENDAR'
   );
   const sendData = url.join('\n');
   if (useDataURL) {
-    return encodeURI("data:text/calendar;charset=utf8," + sendData);
-  }
-  else {
+    return encodeURI(`data:text/calendar;charset=utf8,${sendData}`);
+  } else {
     return sendData;
   }
 };
@@ -66,7 +64,7 @@ const isIOSSafari = () => {
   return iOS && webkit && !userAgent.match(/CriOS/i);
 };
 
-export const link = ({absences, filename}) => {
+export const link = ({ absences, filename }) => {
   const url = buildUrl(absences, isIOSSafari());
   const blob = new Blob([url], {
     type: 'text/calendar;charset=utf-8'

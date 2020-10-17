@@ -5,13 +5,18 @@ exports[`EmployeesAbsences renders as expected 1`] = `
   className="EmployeesAbsences"
 >
   <div
+    onClick={[Function]}
+  >
+    Add to Calendar
+  </div>
+  <div
     className="Members-Table"
   >
     <div>
       <ReactCalendarTimeline
         canChangeGroup={true}
-        canMove={true}
-        canResize="right"
+        canMove={false}
+        canResize={false}
         canSelect={true}
         className=""
         clickTolerance={3}
