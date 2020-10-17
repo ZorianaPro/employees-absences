@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import absencesService from '../../services/absences';
 import membersService from '../../services/members';
 import Timeline  from 'react-calendar-timeline';
 import 'react-calendar-timeline/lib/Timeline.css';
 import moment from 'moment';
+import iCalendarService from '../../services/iCalendar'
 import './EmployeesAbsences.css';
 
 const EmployeesAbsences = () => {
@@ -12,21 +13,30 @@ const EmployeesAbsences = () => {
 
   useEffect(() => {
     try {
-      const responce = absencesService.listWithMoment();
-      setAbsences(responce);
-    } catch (e) {
-      console.log(e);
-    }
-    try {
-      const responce = membersService.list();
-      setMembers(responce);
+      const responceAbsences = absencesService.listWithMoment();
+      const responceMembers = membersService.list();
+      setAbsences(responceAbsences);
+      setMembers(responceMembers);
     } catch (e) {
       console.log(e);
     }
   }, []);
 
+  const onClick = useCallback(async (event) => {
+    try {
+      const absencesToExport = await absencesService.listWithMembers(members);
+      console.log(absencesToExport);
+      iCalendarService.link({absences: absencesToExport, filename: 'download.ics'})
+    } catch (e) {
+      console.log(e);
+    }
+  }, [members]);
+
   return (
     <div className="EmployeesAbsences">
+      <div onClick={ onClick }>
+        Add to Calendar
+      </div>
       <div className="Members-Table">
         <div>
           <Timeline
@@ -46,6 +56,8 @@ const EmployeesAbsences = () => {
               itemTimeStartKey: 'startDate',
               itemTimeEndKey: 'endDate'
             }}
+            canMove={ false }
+            canResize={ false }
           />
         </div>
       </div>
