@@ -12,12 +12,12 @@ export const listWithMoment = () =>
     return {
       ...absence,
       startDate: moment(absence.startDate),
-      endDate: moment(absence.endDate).add(24, 'hour')
+      endDate: moment(absence.endDate)
     };
   });
 
-export const listWithMembers = (members) =>
-  listWithMoment().map((event) => {
+export const listWithMembers = (list, members) =>
+  list.map((event) => {
     const memberObject = members.filter((member) => member.userId === event.userId)
       || null;
     return {
@@ -30,9 +30,31 @@ export const get = (id) =>
   listWithMoment().find((absence) => absence.id === id)
   || null;
 
+export const getByDate = (list, date) =>
+  list.filter((absence) =>
+    moment(date).isBetween(absence.startDate, absence.endDate)
+    || moment(date).unix() === absence.startDate.unix()
+    || moment(date).unix() === absence.endDate.unix()
+  ) || null;
+
+export const getByYear = (list, date) =>
+  list.filter((absence) =>
+    absence.startDate.year() === moment(date).year()
+    || absence.endDate.year() === moment(date).year()
+  ) || null;
+
+export const getByMonth = (list, date) =>
+  list.filter((absence) =>
+    absence.startDate.month() === moment(date).month()
+    || absence.endDate.month() === moment(date).month()
+  ) || null;
+
 export default {
   get,
   list,
   listWithMoment,
-  listWithMembers
+  listWithMembers,
+  getByDate,
+  getByYear,
+  getByMonth
 };

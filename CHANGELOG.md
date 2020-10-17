@@ -1,9 +1,20 @@
 ## CHANGELOG.md
 
+## 1.4.0
+* Add beautiful calendar
+* Get events based on calendar range
+* Add Members and Absence components
+* Add more functions to absences service
+#####TODO:
+  * [ ] Add tests to Members and Absence components
+  * [ ] Open user to see all events
+  * [ ] Make it look pretty
+  * [ ] Test functions in absences service
+  
 ## 1.3.0
 * Generate .ica file to download
 #####TODO:
-  * [ ] FIX: Lines not delimited by CRLF sequence
+  * [X] FIX: Lines not delimited by CRLF sequence
   * [ ] test iCalendar service
   * [ ] test listWithMembers function in absence service
 

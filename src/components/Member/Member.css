@@ -1,0 +1,20 @@
+.Member {
+  display: flex;
+}
+
+.Member .Member-Avatar {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  position: relative;
+}
+
+.Member .Member-Avatar > span {
+  font-family: var(--fontDancing);
+  font-size: var(--fontSize24);
+  color: var(--colorRaisinBlack);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
