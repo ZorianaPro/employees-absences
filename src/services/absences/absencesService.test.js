@@ -22,7 +22,7 @@ describe('absences service', () => {
     beforeEach(() => {
       absencesListWithMoment = absencesService.listWithMoment();
       startDate = moment('2017-01-13');
-      endDate = moment('2017-01-13').add(24, 'hour');
+      endDate = moment('2017-01-13');
     });
 
     it('returns list of absences with startDate as moments', () => {
@@ -30,7 +30,7 @@ describe('absences service', () => {
         .toStrictEqual(startDate);
     });
 
-    it('returns list of absences with endDate + 24 hours as moments', () => {
+    it('returns list of absences with endDate  as moments', () => {
       expect(absencesListWithMoment[0].endDate)
         .toStrictEqual(endDate);
     });

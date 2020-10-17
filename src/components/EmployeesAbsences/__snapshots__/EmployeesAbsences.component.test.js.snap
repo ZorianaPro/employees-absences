@@ -7,117 +7,29 @@ exports[`EmployeesAbsences renders as expected 1`] = `
   <div
     onClick={[Function]}
   >
-    Add to Calendar
+    Download iCal file
   </div>
   <div
-    className="Members-Table"
+    className="EmployeesAbsences-Container"
   >
-    <div>
-      <ReactCalendarTimeline
-        canChangeGroup={true}
-        canMove={false}
-        canResize={false}
-        canSelect={true}
-        className=""
-        clickTolerance={3}
-        dayBackground={null}
-        defaultTimeEnd={"2017-12-31T23:00:00.000Z"}
-        defaultTimeStart={"2016-12-31T23:00:00.000Z"}
-        dragSnap={900000}
-        groups={Array []}
-        headerLabelFormats={
-          Object {
-            "dayLong": "dddd, LL",
-            "dayShort": "L",
-            "hourLong": "dddd, LL, HH:00",
-            "hourMedium": "HH:00",
-            "hourMediumLong": "L, HH:00",
-            "hourShort": "HH",
-            "monthLong": "MMMM YYYY",
-            "monthMedium": "MM/YYYY",
-            "monthMediumLong": "MMM YYYY",
-            "monthShort": "MM/YY",
-            "time": "LLL",
-            "yearLong": "YYYY",
-            "yearShort": "YY",
-          }
-        }
-        headerRef={[Function]}
-        horizontalLineClassNamesForGroup={null}
-        itemHeightRatio={0.65}
-        itemTouchSendsClick={false}
-        items={Array []}
-        keys={
-          Object {
-            "groupIdKey": "userId",
-            "groupLabelKey": "name",
-            "groupRightTitleKey": "name",
-            "groupTitleKey": "name",
-            "itemDivTitleKey": "type",
-            "itemGroupKey": "userId",
-            "itemIdKey": "id",
-            "itemTimeEndKey": "endDate",
-            "itemTimeStartKey": "startDate",
-            "itemTitleKey": "type",
-          }
-        }
-        lineHeight={30}
-        maxZoom={157783680000}
-        minResizeWidth={20}
-        minZoom={3600000}
-        moveResizeValidator={null}
-        onBoundsChange={null}
-        onCanvasClick={null}
-        onItemClick={null}
-        onItemContextMenu={null}
-        onItemDeselect={null}
-        onItemDoubleClick={null}
-        onItemDrag={null}
-        onItemMove={null}
-        onItemResize={null}
-        onItemSelect={null}
-        onTimeChange={[Function]}
-        onZoom={null}
-        rightSidebarWidth={0}
-        scrollRef={[Function]}
-        selected={null}
-        sidebarWidth={150}
-        stackItems={false}
-        stickyHeader={true}
-        style={Object {}}
-        subHeaderLabelFormats={
-          Object {
-            "dayLong": "dddd, Do",
-            "dayMedium": "dd D",
-            "dayMediumLong": "ddd, Do",
-            "dayShort": "D",
-            "hourLong": "HH:00",
-            "hourShort": "HH",
-            "minuteLong": "HH:mm",
-            "minuteShort": "mm",
-            "monthLong": "MMMM",
-            "monthMedium": "MMM",
-            "monthShort": "MM",
-            "yearLong": "YYYY",
-            "yearShort": "YY",
-          }
-        }
-        timeSteps={
-          Object {
-            "day": 1,
-            "hour": 1,
-            "minute": 1,
-            "month": 1,
-            "second": 1,
-            "year": 1,
-          }
-        }
-        traditionalZoom={false}
-        useResizeHandle={false}
-        verticalLineClassNamesForTime={null}
-        visibleTimeEnd={null}
-        visibleTimeStart={null}
-      />
+    <Calendar
+      defaultActiveStartDate={2016-12-31T23:00:00.000Z}
+      maxDetail="month"
+      minDetail="century"
+      onActiveStartDateChange={[Function]}
+      onClickDay={[Function]}
+      returnValue="start"
+      showNavigation={true}
+      showNeighboringMonth={true}
+      showWeekNumbers={true}
+    />
+    <div
+      className="Absences"
+    >
+      <p>
+        No absences this 
+        month
+      </p>
     </div>
   </div>
 </div>

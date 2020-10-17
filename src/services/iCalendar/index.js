@@ -3,7 +3,7 @@
   see documentation here https://icalendar.org/RFC-Specifications/iCalendar-RFC-5545/
 */
 const pad = (num) =>
-  (num < 10) ? `0${num}` : `1${num}`;
+  (num < 10) ? `0${num}` : `${num}`;
 
 const formatDate = (dateString) => {
   const dateTime = new Date(dateString);
@@ -13,18 +13,18 @@ const formatDate = (dateString) => {
     pad(dateTime.getUTCDate()),
     'T',
     pad(dateTime.getUTCHours()),
-    pad(`${dateTime.getUTCMinutes()}00Z`)
+    `${pad(dateTime.getUTCMinutes())}00Z`
   ].join('');
 };
 
 const buildUrl = (absences, useDataURL) => {
-  const url = [
+  const calendar = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
     'PRODID:-//Eventful//Eventful 2.0//EN'
   ];
   absences.map((absence) =>
-    url.push(
+    calendar.push(
       'BEGIN:VEVENT',
       `UID:${absence.id}`,
       `DTSTAMP:${formatDate(absence.createdAt)}`,
@@ -37,10 +37,10 @@ const buildUrl = (absences, useDataURL) => {
       'END:VEVENT'
     )
   );
-  url.push(
+  calendar.push(
     'END:VCALENDAR'
   );
-  const sendData = url.join('\n');
+  const sendData = calendar.join('\r\n');
   if (useDataURL) {
     return encodeURI(`data:text/calendar;charset=utf8,${sendData}`);
   } else {

@@ -1,0 +1,12 @@
+.Absence {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 2em 1em 2em;
+  border: 1px solid var(--colorRaisinBlack);
+  border-radius: 0.5em;
+}
+
+.Absence .Absence-Info > p{
+  padding: 0 0.5em;
+}
