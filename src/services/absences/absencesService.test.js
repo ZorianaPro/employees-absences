@@ -1,5 +1,6 @@
 import absencesService from './';
 import absences from '../../support/absences';
+import moment from 'moment';
 
 describe('absences service', () => {
   describe('list()', () => {
@@ -11,6 +12,27 @@ describe('absences service', () => {
     it('returns list of absences', () => {
       expect(absencesList)
         .toEqual(absences.payload);
+    });
+  });
+
+  describe('listWithMoment()', () => {
+    let absencesListWithMoment;
+    let startDate;
+    let endDate;
+    beforeEach(() => {
+      absencesListWithMoment = absencesService.listWithMoment();
+      startDate = moment('2017-01-13');
+      endDate = moment('2017-01-13').add(24, 'hour');
+    });
+
+    it('returns list of absences with startDate as moments', () => {
+      expect(absencesListWithMoment[0].startDate)
+        .toStrictEqual(startDate);
+    });
+
+    it('returns list of absences with endDate + 24 hours as moments', () => {
+      expect(absencesListWithMoment[0].endDate)
+        .toStrictEqual(endDate);
     });
   });
 
