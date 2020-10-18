@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import EmployeesAbsences from './components/EmployeesAbsences';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <EmployeesAbsences />
+    <Router basename="/">
+      <EmployeesAbsences />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

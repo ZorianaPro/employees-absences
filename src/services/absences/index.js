@@ -1,4 +1,5 @@
 import absences from '../../support/absences';
+import membersService from '../members';
 import moment from 'moment';
 
 export const list = () =>
@@ -16,8 +17,9 @@ export const listWithMoment = () =>
     };
   });
 
-export const listWithMembers = (list, members) =>
+export const listWithMembers = (list) =>
   list.map((event) => {
+    const members = membersService.list();
     const memberObject = members.filter((member) => member.userId === event.userId)
       || null;
     return {
@@ -49,6 +51,11 @@ export const getByMonth = (list, date) =>
     || absence.endDate.month() === moment(date).month()
   ) || null;
 
+export const getByUser = (list, userId) =>
+  list.filter((absence) =>
+    absence.userId === userId
+  ) || null;
+
 export default {
   get,
   list,
@@ -56,5 +63,6 @@ export default {
   listWithMembers,
   getByDate,
   getByYear,
-  getByMonth
+  getByMonth,
+  getByUser
 };

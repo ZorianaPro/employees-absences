@@ -55,3 +55,10 @@ that I can import them into outlook.
 - (Bonus) I can go to http://localhost:3000?userId=123 and only receive the absences of the given user
 - (Bonus) I can go to http://localhost:3000?startDate=2017-01-01&endDate=2017-02-01 and only receive the absences in the given date range
 - (Bonus) Build the first 4 acceptance criteria in the other language (for backend candidates in js and for frontend candidates in ruby)
+
+Feedback:
+1. Would be nice to have available pictures for users
+2. I would recommend, to not specify how you want to open absences of user or absences by time range
+I think that what owner wants is to be able to open them, and how he is able to do it, let developer decide
+3. Would be cool to actually have a design, because it's not so easy to stop the task, and I have nothing to
+ase my UI on

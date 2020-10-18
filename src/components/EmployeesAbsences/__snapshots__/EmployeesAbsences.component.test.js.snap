@@ -4,33 +4,12 @@ exports[`EmployeesAbsences renders as expected 1`] = `
 <div
   className="EmployeesAbsences"
 >
-  <div
-    onClick={[Function]}
-  >
-    Download iCal file
-  </div>
-  <div
-    className="EmployeesAbsences-Container"
-  >
-    <Calendar
-      defaultActiveStartDate={2016-12-31T23:00:00.000Z}
-      maxDetail="month"
-      minDetail="century"
-      onActiveStartDateChange={[Function]}
-      onClickDay={[Function]}
-      returnValue="start"
-      showNavigation={true}
-      showNeighboringMonth={true}
-      showWeekNumbers={true}
-    />
-    <div
-      className="Absences"
+  <Switch>
+    <BrowserRouter
+      path="/"
     >
-      <p>
-        No absences this 
-        month
-      </p>
-    </div>
-  </div>
+      <Absences />
+    </BrowserRouter>
+  </Switch>
 </div>
 `;

@@ -1,0 +1,63 @@
+.Overlay {
+  display: block;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 7;
+  overflow: scroll;
+}
+
+.Overlay svg {
+  height: 24px;
+  width: 24px;
+}
+
+.Overlay .Overlay-Mask {
+  background-color: rgba(59, 65, 74, 0.5);
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.Overlay .Overlay-Container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.Overlay .Overlay-Content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  background-color: var(--colorWhite);
+  width: 30em;
+  transform: translate(-50%, -30%);
+  padding: 1.5em;
+  border-radius: 0.8em;
+}
+
+.Overlay .Overlay-Close {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  cursor: pointer;
+  font-size: var(--fontSize16);
+  z-index: 11;
+}
+
+.Overlay .Overlay-Content > * {
+  margin: auto;
+  z-index: 1;
+}
