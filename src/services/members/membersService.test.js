@@ -16,14 +16,14 @@ describe('members service', () => {
   describe('get()', () => {
     describe('passed existing id', () => {
       let member;
-      const id = 709;
+      const id = 649;
       beforeEach(() => {
         member = membersService.get(id);
       });
       it('returns member', () => {
         expect(member)
           .toEqual(expect.objectContaining({
-            'id': 709
+            'userId': id
           }));
       });
     });

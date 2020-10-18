@@ -1,5 +1,12 @@
 ## CHANGELOG.md
 
+## 1.5.0
+* Add router
+* Add Overlay Component
+* Add selection of absences by user
+* Update dependencies
+
+
 ## 1.4.0
 * Add beautiful calendar
 * Get events based on calendar range
@@ -7,9 +14,12 @@
 * Add more functions to absences service
 #####TODO:
   * [ ] Add tests to Members and Absence components
-  * [ ] Open user to see all events
+  * [X] Open user to see all events
   * [ ] Make it look pretty
   * [ ] Test functions in absences service
+  * [X] Add router
+  * [ ] Cleanup code
+  * [ ] Add documentation
   
 ## 1.3.0
 * Generate .ica file to download

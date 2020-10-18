@@ -1,11 +1,10 @@
 import members from '../../support/members';
 
-export const list = () => {
-  return members.payload;
-};
+export const list = () =>
+  members.payload;
 
 export const get = (id) =>
-  list().find((member) => member.id === id)
+  list().find((member) => member.userId === id)
   || null;
 
 export default {
