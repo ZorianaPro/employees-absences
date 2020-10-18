@@ -1,5 +1,9 @@
 ## CHANGELOG.md
 
+## 1.6.1
+* Install jest-junit
+* Update dependencies
+
 ## 1.6.0
 * Add tests
 #####TODO:
