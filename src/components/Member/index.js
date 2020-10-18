@@ -29,7 +29,8 @@ const Member = ({
   userId,
   name
 }) => (
-  <div className="Member" key={ `user-${userId}` }>
+  <div className="Member"
+    key={ `user-${userId}` }>
     <div className="Member-Avatar"
       style={{ backgroundColor: colors[Math.min(id, 10)] }}>
       <span>{ name[0] }</span>

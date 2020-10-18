@@ -2,10 +2,10 @@
   This file takes care of generating .ical file for events
   see documentation here https://icalendar.org/RFC-Specifications/iCalendar-RFC-5545/
 */
-const pad = (num) =>
+export const pad = (num) =>
   (num < 10) ? `0${num}` : `${num}`;
 
-const formatDate = (dateString) => {
+export const formatDate = (dateString) => {
   const dateTime = new Date(dateString);
   return [
     dateTime.getUTCFullYear(),
@@ -17,7 +17,7 @@ const formatDate = (dateString) => {
   ].join('');
 };
 
-const buildUrl = (absences, useDataURL) => {
+export const createICalFileContent = (absences, useDataURL) => {
   const calendar = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
@@ -48,9 +48,9 @@ const buildUrl = (absences, useDataURL) => {
   }
 };
 
-const downloadBlob = (blob, filename) => {
+export const downloadBlob = (blob, filename) => {
   const linkEl = document.createElement('a');
-  linkEl.href = URL.createObjectURL(blob);
+  linkEl.href = window.URL.createObjectURL(blob);
   linkEl.setAttribute('download', filename);
   document.body.appendChild(linkEl);
   linkEl.click();
@@ -63,15 +63,19 @@ const isIOSSafari = () => {
   const webkit = !!userAgent.match(/WebKit/i);
   return iOS && webkit && !userAgent.match(/CriOS/i);
 };
-
+//this works on Linux. Unfortunately couldn't test on different OS
 export const link = ({ absences, filename }) => {
-  const url = buildUrl(absences, isIOSSafari());
-  const blob = new Blob([url], {
+  const content = createICalFileContent(absences, isIOSSafari());
+  const contentBlob = new Blob([content], {
     type: 'text/calendar;charset=utf-8'
   });
-  downloadBlob(blob, filename);
+  downloadBlob(contentBlob, filename);
 };
 
 export default {
+  pad,
+  formatDate,
+  createICalFileContent,
+  downloadBlob,
   link
 };

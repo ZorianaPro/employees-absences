@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Member renders as expected 1`] = `
+<Member
+  id={1}
+  name="Zozo"
+  userId={664}
+>
+  <div
+    className="Member"
+    key="user-664"
+  >
+    <div
+      className="Member-Avatar"
+      style={
+        Object {
+          "backgroundColor": "#AA4465",
+        }
+      }
+    >
+      <span>
+        Z
+      </span>
+    </div>
+    <p>
+      Zozo
+    </p>
+  </div>
+</Member>
+`;

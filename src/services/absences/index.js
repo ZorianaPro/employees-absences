@@ -47,8 +47,10 @@ export const getByYear = (list, date) =>
 
 export const getByMonth = (list, date) =>
   list.filter((absence) =>
-    absence.startDate.month() === moment(date).month()
-    || absence.endDate.month() === moment(date).month()
+    (absence.startDate.month() === moment(date).month()
+      && absence.startDate.year() === moment(date).year())
+    || (absence.endDate.month() === moment(date).month()
+      && absence.endDate.year() === moment(date).year())
   ) || null;
 
 export const getByUser = (list, userId) =>

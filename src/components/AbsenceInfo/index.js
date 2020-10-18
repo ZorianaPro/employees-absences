@@ -10,15 +10,10 @@ const AbsenceInfo = ({
 }) => (
   <li className="Absence-Info"
     key={ `absenceInfo-${id}` }>
-    <p>is on {type}</p>
-    {
-      view === 'day'
-      && <p>today</p>
-    }
-    {
-      view !== 'day'
-      && <p> from {startDate.format('DD/MM/YYYY')} to {endDate.format('DD/MM/YYYY')} </p>
-    }
+    <p>is on { type }
+      { view === 'day'
+        ? ' today'
+        : ` from ${startDate.format('DD/MM/YYYY')} to ${endDate.format('DD/MM/YYYY')}` }</p>
   </li>
 );
 

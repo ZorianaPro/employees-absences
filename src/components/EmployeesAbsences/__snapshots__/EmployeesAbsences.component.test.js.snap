@@ -1,15 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EmployeesAbsences renders as expected 1`] = `
-<div
-  className="EmployeesAbsences"
->
-  <Switch>
-    <BrowserRouter
-      path="/"
-    >
-      <Absences />
-    </BrowserRouter>
-  </Switch>
-</div>
-`;
+exports[`EmployeesAbsences renders as expected 1`] = `null`;

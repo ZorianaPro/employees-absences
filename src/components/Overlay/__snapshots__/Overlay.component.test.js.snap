@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay renders as expected 1`] = `
+<div
+  className="Overlay"
+>
+  <div
+    className="Overlay-Mask"
+  />
+  <div
+    className="Overlay-Container"
+  >
+    <div
+      className="Overlay-Content"
+    >
+      <div
+        className="Overlay-Close"
+      >
+        <XCloseSVG />
+      </div>
+    </div>
+  </div>
+</div>
+`;
