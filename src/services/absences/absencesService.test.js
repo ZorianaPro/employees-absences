@@ -1,6 +1,5 @@
 import absencesService from './';
 import absences from '../../support/absences';
-import moment from 'moment';
 
 describe('absences service', () => {
   describe('list()', () => {
@@ -12,27 +11,6 @@ describe('absences service', () => {
     it('returns list of absences', () => {
       expect(absencesList)
         .toEqual(absences.payload);
-    });
-  });
-
-  describe('listWithMoment()', () => {
-    let absencesListWithMoment;
-    let startDate;
-    let endDate;
-    beforeEach(() => {
-      absencesListWithMoment = absencesService.listWithMoment();
-      startDate = moment('2017-01-13');
-      endDate = moment('2017-01-13');
-    });
-
-    it('returns list of absences with startDate as moments', () => {
-      expect(absencesListWithMoment[0].startDate)
-        .toStrictEqual(startDate);
-    });
-
-    it('returns list of absences with endDate  as moments', () => {
-      expect(absencesListWithMoment[0].endDate)
-        .toStrictEqual(endDate);
     });
   });
 
@@ -69,18 +47,18 @@ describe('absences service', () => {
   const list = [
     {
       'id': 1,
-      'startDate': moment('2017-01-13').add(-12, 'h'),
-      'endDate': moment('2017-01-13').add(12, 'h'),
+      'startDate': '2017-01-13',
+      'endDate': '2017-01-14',
       'userId': 12
     }, {
       'id': 2,
-      'startDate': moment('2017-01-13').add(-2, 'd'),
-      'endDate': moment('2017-01-13').add(1, 'd'),
+      'startDate': '2017-01-11',
+      'endDate':'2017-01-14',
       'userId': 13
     }, {
       'id': 3,
-      'startDate': moment('2017-01-13').add(-2, 'y'),
-      'endDate': moment('2017-01-13').add(1, 'y'),
+      'startDate': '2014-01-13',
+      'endDate': '2018-01-13',
       'userId': 14
     }
   ];
@@ -88,7 +66,7 @@ describe('absences service', () => {
   describe('getByDate()', () => {
     let absences;
     describe('give date in between', () => {
-      const date = moment('2017-01-13').add(-18, 'h');
+      const date = '2017-01-14';
       beforeEach(() => {
         absences = absencesService.getByDate(list, date);
       });
@@ -96,12 +74,12 @@ describe('absences service', () => {
       it('returns absences', () => {
         expect(absences[0])
           .toEqual(expect.objectContaining({
-            'id': 2
+            'id': 1
           }));
       });
     });
     describe('give date the same as start date', () => {
-      const date = moment('2017-01-13').add(-12, 'h');
+      const date = '2017-01-13';
       beforeEach(() => {
         absences = absencesService.getByDate(list, date);
       });
@@ -115,7 +93,7 @@ describe('absences service', () => {
     });
 
     describe('give date the same as end date', () => {
-      const date = moment('2017-01-13').add(12, 'h');
+      const date = '2017-01-13';
       beforeEach(() => {
         absences = absencesService.getByDate(list, date);
       });
@@ -129,7 +107,7 @@ describe('absences service', () => {
     });
 
     describe('give date not in range', () => {
-      const date = moment('2034-12-13');
+      const date = '2034-12-13';
       beforeEach(() => {
         absences = absencesService.getByDate(list, date);
       });

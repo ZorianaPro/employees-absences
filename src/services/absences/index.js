@@ -1,21 +1,8 @@
 import absences from '../../support/absences';
 import membersService from '../members';
-import moment from 'moment';
 
 export const list = () =>
   absences.payload;
-
-/* startDate and endDate have to be passed as moment objects,
-   to display absences in a calendar view
-*/
-export const listWithMoment = () =>
-  list().map((absence) => {
-    return {
-      ...absence,
-      startDate: moment(absence.startDate),
-      endDate: moment(absence.endDate)
-    };
-  });
 
 export const listWithMembers = (list) =>
   list.map((event) => {
@@ -29,28 +16,27 @@ export const listWithMembers = (list) =>
   });
 
 export const get = (id) =>
-  listWithMoment().find((absence) => absence.id === id)
+  list().find((absence) => absence.id === id)
   || null;
 
 export const getByDate = (list, date) =>
   list.filter((absence) =>
-    moment(date).isBetween(absence.startDate, absence.endDate)
-    || moment(date).unix() === absence.startDate.unix()
-    || moment(date).unix() === absence.endDate.unix()
+    new Date(date).getTime() >= new Date(absence.startDate).getTime()
+    && new Date(date).getTime() <= new Date(absence.endDate).getTime()
   ) || null;
 
 export const getByYear = (list, date) =>
   list.filter((absence) =>
-    absence.startDate.year() === moment(date).year()
-    || absence.endDate.year() === moment(date).year()
+    new Date(absence.startDate).getFullYear() === new Date(date).getFullYear()
+    || new Date(absence.endDate).getFullYear() === new Date(date).getFullYear()
   ) || null;
 
 export const getByMonth = (list, date) =>
   list.filter((absence) =>
-    (absence.startDate.month() === moment(date).month()
-      && absence.startDate.year() === moment(date).year())
-    || (absence.endDate.month() === moment(date).month()
-      && absence.endDate.year() === moment(date).year())
+    (new Date(absence.startDate).getMonth() === new Date(date).getMonth()
+      && new Date(absence.startDate).getFullYear() === new Date(date).getFullYear())
+    || (new Date(absence.endDate).getMonth() === new Date(date).getMonth()
+    && new Date(absence.endDate).getFullYear() === new Date(date).getFullYear())
   ) || null;
 
 export const getByUser = (list, userId) =>
@@ -61,7 +47,6 @@ export const getByUser = (list, userId) =>
 export default {
   get,
   list,
-  listWithMoment,
   listWithMembers,
   getByDate,
   getByYear,

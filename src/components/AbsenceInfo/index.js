@@ -13,7 +13,7 @@ const AbsenceInfo = ({
     <p>is on { type }
       { view === 'day'
         ? ' today'
-        : ` from ${startDate.format('DD/MM/YYYY')} to ${endDate.format('DD/MM/YYYY')}` }</p>
+        : ` from ${startDate} to ${endDate}` }</p>
   </li>
 );
 

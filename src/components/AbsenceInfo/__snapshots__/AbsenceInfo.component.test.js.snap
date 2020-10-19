@@ -2,9 +2,9 @@
 
 exports[`AbsenceInfo renders as expected 1`] = `
 <AbsenceInfo
-  endDate={"2020-02-12T23:00:00.000Z"}
+  endDate="2020-02-13"
   id={1}
-  startDate={"2020-01-12T23:00:00.000Z"}
+  startDate="2020-01-13"
   type="vacation"
   view="month"
 >
@@ -15,7 +15,7 @@ exports[`AbsenceInfo renders as expected 1`] = `
     <p>
       is on 
       vacation
-       from 13/01/2020 to 13/02/2020
+       from 2020-01-13 to 2020-02-13
     </p>
   </li>
 </AbsenceInfo>

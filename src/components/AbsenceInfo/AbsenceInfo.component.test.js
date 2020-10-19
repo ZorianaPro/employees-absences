@@ -1,13 +1,12 @@
 import React from 'react';
 import AbsenceInfo from './';
 import { shallow, mount } from 'enzyme';
-import moment from 'moment';
 
 const data = {
   'id': 1,
   'type': 'vacation',
-  'startDate': moment('2020-01-13'),
-  'endDate': moment('2020-02-13'),
+  'startDate': '2020-01-13',
+  'endDate': '2020-02-13',
   'view': 'month'
 };
 
@@ -74,7 +73,7 @@ describe('AbsenceInfo', () => {
 
       it('renders absence with range', () => {
         expect(absenceInfo.find('.Absence-Info p').text())
-          .toEqual('is on vacation from 13/01/2020 to 13/02/2020');
+          .toEqual('is on vacation from 2020-01-13 to 2020-02-13');
       });
     });
   });

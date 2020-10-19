@@ -1,5 +1,4 @@
 import iCalendarService from './';
-import moment from 'moment';
 
 const absences = [
   {
@@ -100,7 +99,7 @@ describe('Icalendar service', () => {
   });
 
   describe('formatDate()', () => {
-    const date =  moment('2017-01-13');
+    const date =  '2017-01-13';
     let formatDate;
 
     beforeEach(() => {
@@ -109,7 +108,7 @@ describe('Icalendar service', () => {
 
     it('returns formatted date', () => {
       expect(formatDate)
-        .toEqual('20170112T230000Z');
+        .toEqual('20170113T000000Z');
     });
   });
 

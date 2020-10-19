@@ -1,5 +1,8 @@
 ## CHANGELOG.md
 
+## 1.7.0
+* Remove moment package
+
 ## 1.6.1
 * Install jest-junit
 * Update dependencies
