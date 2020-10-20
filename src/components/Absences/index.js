@@ -51,7 +51,7 @@ const Absences = () => {
   }, [resetState]);
 
   useEffect(() => {
-    const responceAbsences = absencesService.listWithMoment();
+    const responceAbsences = absencesService.list();
     setAbsences(responceAbsences);
   }, []);
 
@@ -68,7 +68,7 @@ const Absences = () => {
         absencesToShow = absencesService.getByDate(absences, activeStartDate);
         break;
       default:
-        absencesToShow = absencesService.listWithMoment();
+        absencesToShow = absencesService.list();
     }
     const absencesWithMembers = absencesService.listWithMembers(absencesToShow);
     setAbsencesToShow(absencesWithMembers);

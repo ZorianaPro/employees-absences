@@ -5,15 +5,6 @@ import moment from 'moment';
 export const list = () =>
   absences.payload;
 
-export const listWithMoment = () =>
-  list().map((absence) => {
-    return {
-      ...absence,
-      startDate: moment(absence.startDate),
-      endDate: moment(absence.endDate)
-    };
-  });
-
 export const listWithMembers = (list) =>
   list.map((event) => {
     const members = membersService.list();
@@ -59,7 +50,6 @@ export default {
   get,
   list,
   listWithMembers,
-  listWithMoment,
   getByDate,
   getByYear,
   getByMonth,
