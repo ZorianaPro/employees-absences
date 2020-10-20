@@ -12,7 +12,7 @@ const AbsenceInfo = ({
     <p>is on { type }
       { view === 'day'
         ? ' today'
-        : ` from ${moment(startDate).format('DD-MM-YYY')} to ${moment(endDate).format('DD-MM-YYYY')}` }</p>
+        : ` from ${moment(startDate).format('DD-MM-YYYY')} to ${moment(endDate).format('DD-MM-YYYY')}` }</p>
   </li>
 );
 

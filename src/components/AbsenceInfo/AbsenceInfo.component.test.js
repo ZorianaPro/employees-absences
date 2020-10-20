@@ -73,7 +73,7 @@ describe('AbsenceInfo', () => {
 
       it('renders absence with range', () => {
         expect(absenceInfo.find('.Absence-Info p').text())
-          .toEqual('is on vacation from 13-01-202020 to 13-02-2020');
+          .toEqual('is on vacation from 13-01-2020 to 13-02-2020');
       });
     });
   });
