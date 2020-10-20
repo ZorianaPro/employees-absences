@@ -1,7 +1,7 @@
 [Employees absences application](https://github.com/ZorianaPro/employees-absences)<br/>
 See [Task](/TASK.md)<br/>
 Developed by [Zoriana Lesyk](https://github.com/ZorianaPro) <br/>
-
+[Check build](https://github.com/ZorianaPro/employees-absences/actions) <br/>
 React SPA.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
