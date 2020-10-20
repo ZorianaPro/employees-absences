@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="52" failures="0" errors="0" time="3.977">
+  <testsuite name="XCloseSVG" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:39" time="1.776" tests="2">
+    <testcase classname="XCloseSVG renders without crashing" name="XCloseSVG renders without crashing" time="0.007">
+    </testcase>
+    <testcase classname="XCloseSVG renders as expected" name="XCloseSVG renders as expected" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="AbsenceInfo" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:39" time="1.843" tests="4">
+    <testcase classname="AbsenceInfo renders without crashing" name="AbsenceInfo renders without crashing" time="0.011">
+    </testcase>
+    <testcase classname="AbsenceInfo renders as expected" name="AbsenceInfo renders as expected" time="0.058">
+    </testcase>
+    <testcase classname="AbsenceInfo view is day renders absence with today word" name="AbsenceInfo view is day renders absence with today word" time="0.01">
+    </testcase>
+    <testcase classname="AbsenceInfo view is month renders absence with range" name="AbsenceInfo view is month renders absence with range" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="members service" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:39" time="1.805" tests="3">
+    <testcase classname="members service list() returns list of members" name="members service list() returns list of members" time="0.006">
+    </testcase>
+    <testcase classname="members service get() passed existing id returns member" name="members service get() passed existing id returns member" time="0.002">
+    </testcase>
+    <testcase classname="members service get() passed non existing id returns member" name="members service get() passed non existing id returns member" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Member" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:39" time="1.905" tests="4">
+    <testcase classname="Member renders without crashing" name="Member renders without crashing" time="0.011">
+    </testcase>
+    <testcase classname="Member renders as expected" name="Member renders as expected" time="0.062">
+    </testcase>
+    <testcase classname="Member name renders name" name="Member name renders name" time="0.011">
+    </testcase>
+    <testcase classname="Member name renders avatar with first name character" name="Member name renders avatar with first name character" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="EmployeesAbsences" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:39" time="2.064" tests="2">
+    <testcase classname="EmployeesAbsences renders without crashing" name="EmployeesAbsences renders without crashing" time="0.009">
+    </testcase>
+    <testcase classname="EmployeesAbsences renders as expected" name="EmployeesAbsences renders as expected" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="absences service" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:39" time="2.017" tests="15">
+    <testcase classname="absences service list() returns list of absences" name="absences service list() returns list of absences" time="0.005">
+    </testcase>
+    <testcase classname="absences service get() passed existing id returns absence" name="absences service get() passed existing id returns absence" time="0.001">
+    </testcase>
+    <testcase classname="absences service get() passed non existing id returns absence" name="absences service get() passed non existing id returns absence" time="0.001">
+    </testcase>
+    <testcase classname="absences service getByDate() give date in between returns absences" name="absences service getByDate() give date in between returns absences" time="0.008">
+    </testcase>
+    <testcase classname="absences service getByDate() give date the same as start date returns absences" name="absences service getByDate() give date the same as start date returns absences" time="0.002">
+    </testcase>
+    <testcase classname="absences service getByDate() give date the same as end date returns absences" name="absences service getByDate() give date the same as end date returns absences" time="0.004">
+    </testcase>
+    <testcase classname="absences service getByDate() give date not in range returns absences" name="absences service getByDate() give date not in range returns absences" time="0.004">
+    </testcase>
+    <testcase classname="absences service getByYear() give date the same as start date year returns absences" name="absences service getByYear() give date the same as start date year returns absences" time="0.002">
+    </testcase>
+    <testcase classname="absences service getByYear() give date the same as end date year returns absences" name="absences service getByYear() give date the same as end date year returns absences" time="0.01">
+    </testcase>
+    <testcase classname="absences service getByYear() give date not in range returns absences" name="absences service getByYear() give date not in range returns absences" time="0.002">
+    </testcase>
+    <testcase classname="absences service getByMonth() give date the same as start date month returns absences" name="absences service getByMonth() give date the same as start date month returns absences" time="0.002">
+    </testcase>
+    <testcase classname="absences service getByMonth() give date the same as end date month returns absences" name="absences service getByMonth() give date the same as end date month returns absences" time="0.002">
+    </testcase>
+    <testcase classname="absences service getByMonth() give date the same as end date month but different year returns absences" name="absences service getByMonth() give date the same as end date month but different year returns absences" time="0.002">
+    </testcase>
+    <testcase classname="absences service getByUser() give existing userId returns absences" name="absences service getByUser() give existing userId returns absences" time="0.001">
+    </testcase>
+    <testcase classname="absences service getByUser() give not existing userId returns absences" name="absences service getByUser() give not existing userId returns absences" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="XCloseSymbol" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:41" time="0.355" tests="2">
+    <testcase classname="XCloseSymbol renders without crashing" name="XCloseSymbol renders without crashing" time="0.004">
+    </testcase>
+    <testcase classname="XCloseSymbol renders as expected" name="XCloseSymbol renders as expected" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="SVGSpriteSheet" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:40" time="0.503" tests="4">
+    <testcase classname="SVGSpriteSheet renders without crashing" name="SVGSpriteSheet renders without crashing" time="0.001">
+    </testcase>
+    <testcase classname="SVGSpriteSheet renders as expected" name="SVGSpriteSheet renders as expected" time="0.002">
+    </testcase>
+    <testcase classname="SVGSpriteSheet id uses the id given in props" name="SVGSpriteSheet id uses the id given in props" time="0.006">
+    </testcase>
+    <testcase classname="SVGSpriteSheet className uses the className given in props" name="SVGSpriteSheet className uses the className given in props" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Overlay" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:40" time="0.474" tests="4">
+    <testcase classname="Overlay renders without crashing" name="Overlay renders without crashing" time="0.002">
+    </testcase>
+    <testcase classname="Overlay renders as expected" name="Overlay renders as expected" time="0.003">
+    </testcase>
+    <testcase classname="Overlay children renders all the children" name="Overlay children renders all the children" time="0.002">
+    </testcase>
+    <testcase classname="Overlay onClose calls onClose callback" name="Overlay onClose calls onClose callback" time="0.021">
+    </testcase>
+  </testsuite>
+  <testsuite name="Icalendar service" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:41" time="0.398" tests="4">
+    <testcase classname="Icalendar service pad() pass value smaller then 10 returns 0 + num" name="Icalendar service pad() pass value smaller then 10 returns 0 + num" time="0.001">
+    </testcase>
+    <testcase classname="Icalendar service pad() pass value greater then 10 returns num" name="Icalendar service pad() pass value greater then 10 returns num" time="0.001">
+    </testcase>
+    <testcase classname="Icalendar service formatDate() returns formatted date" name="Icalendar service formatDate() returns formatted date" time="0.001">
+    </testcase>
+    <testcase classname="Icalendar service createICalFileContent() returns content for iCalendar file" name="Icalendar service createICalFileContent() returns content for iCalendar file" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Absences" errors="0" failures="0" skipped="0" timestamp="2020-10-20T09:44:39" time="2.948" tests="8">
+    <testcase classname="Absences renders without crashing" name="Absences renders without crashing" time="0.034">
+    </testcase>
+    <testcase classname="Absences renders as expected" name="Absences renders as expected" time="0.038">
+    </testcase>
+    <testcase classname="Absences absencesToShow renders Absences-List" name="Absences absencesToShow renders Absences-List" time="0.351">
+    </testcase>
+    <testcase classname="Absences url params if there is valid user id in url renders overlay" name="Absences url params if there is valid user id in url renders overlay" time="0.166">
+    </testcase>
+    <testcase classname="Absences url params if there is valid user id in url renders correct user incide" name="Absences url params if there is valid user id in url renders correct user incide" time="0.104">
+    </testcase>
+    <testcase classname="Absences url params if there is valid user id in url renders as expected" name="Absences url params if there is valid user id in url renders as expected" time="0.148">
+    </testcase>
+    <testcase classname="Absences url params if there is no valid user id in url doesn&apos;t render  overlay" name="Absences url params if there is no valid user id in url doesn&apos;t render  overlay" time="0.095">
+    </testcase>
+    <testcase classname="Absences on change start date renders Absences-List" name="Absences on change start date renders Absences-List" time="0.106">
+    </testcase>
+  </testsuite>
+</testsuites>

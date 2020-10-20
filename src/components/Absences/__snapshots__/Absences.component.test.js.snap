@@ -3561,7 +3561,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   sickness
-                   from 13-01-2017 to 13-01-2017
+                   from 2017-01-13 to 2017-01-13
                 </p>
               </li>
             </AbsenceInfo>
@@ -3629,7 +3629,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 05-01-2017 to 05-01-2017
+                   from 2017-01-05 to 2017-01-05
                 </p>
               </li>
             </AbsenceInfo>
@@ -3697,7 +3697,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 11-01-2017 to 11-01-2017
+                   from 2017-01-11 to 2017-01-11
                 </p>
               </li>
             </AbsenceInfo>
@@ -3765,7 +3765,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 31-12-2016 to 02-01-2017
+                   from 2016-12-31 to 2017-01-02
                 </p>
               </li>
             </AbsenceInfo>
@@ -3845,7 +3845,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   sickness
-                   from 20-02-2017 to 25-02-2017
+                   from 2017-02-20 to 2017-02-25
                 </p>
               </li>
             </AbsenceInfo>
@@ -3862,7 +3862,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 10-03-2017 to 10-03-2017
+                   from 2017-03-10 to 2017-03-10
                 </p>
               </li>
             </AbsenceInfo>
@@ -3879,7 +3879,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 10-03-2017 to 10-03-2017
+                   from 2017-03-10 to 2017-03-10
                 </p>
               </li>
             </AbsenceInfo>
@@ -3896,7 +3896,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 13-03-2017 to 13-03-2017
+                   from 2017-03-13 to 2017-03-13
                 </p>
               </li>
             </AbsenceInfo>
@@ -3913,7 +3913,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   sickness
-                   from 14-03-2017 to 15-03-2017
+                   from 2017-03-14 to 2017-03-15
                 </p>
               </li>
             </AbsenceInfo>
@@ -3930,7 +3930,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 16-03-2017 to 18-03-2017
+                   from 2017-03-16 to 2017-03-18
                 </p>
               </li>
             </AbsenceInfo>
@@ -3947,7 +3947,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 13-03-2017 to 13-03-2017
+                   from 2017-03-13 to 2017-03-13
                 </p>
               </li>
             </AbsenceInfo>
@@ -3964,7 +3964,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 11-03-2017 to 11-03-2017
+                   from 2017-03-11 to 2017-03-11
                 </p>
               </li>
             </AbsenceInfo>
@@ -3981,7 +3981,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 31-12-2016 to 02-01-2017
+                   from 2016-12-31 to 2017-01-02
                 </p>
               </li>
             </AbsenceInfo>
