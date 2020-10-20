@@ -25,7 +25,7 @@ const Absences = () => {
   const resetState = useCallback(() => {
     setShouldOpenOverlay(false);
     setShouldCleanURLParams(true);
-    setActiveMember(null);
+    setActiveMember([]);
   }, []);
 
   const downloadICal = useCallback(async () => {
@@ -98,15 +98,22 @@ const Absences = () => {
 
   return (
     <div className="Absences">
-      <div onClick={ downloadICal }>
-        Download iCal file
-      </div>
       <div className="Absences-Container">
-        <Calendar
-          onClickDay={ onClickDay }
-          onActiveStartDateChange={ onActiveStartDateChange }
-          defaultActiveStartDate={ new Date('2017-02-01T00:00:00.000Z') }
-        />
+        <div className="Absences-Container-Left">
+          <div className="Absences-Container-Fixed">
+            <Calendar
+              onClickDay={ onClickDay }
+              onActiveStartDateChange={ onActiveStartDateChange }
+              defaultActiveStartDate={ new Date('2017-02-01T00:00:00.000Z') }
+            />
+            <div className="Download-Button"
+              onClick={
+                downloadICal
+              }>
+              <span>Download iCal file</span>
+            </div>
+          </div>
+        </div>
         <div className="Absences-List">
           {
             absencesToShow.length > 0

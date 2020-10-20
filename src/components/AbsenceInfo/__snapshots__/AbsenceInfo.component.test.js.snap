@@ -12,10 +12,14 @@ exports[`AbsenceInfo renders as expected 1`] = `
     className="Absence-Info"
   >
     <p>
-      is on 
-      vacation
-       from 2020-01-13 to 2020-02-13
+      is 
+      on vacation
     </p>
+    <span
+      className="Absence-Info-Date"
+    >
+      from 2020-01-13 to 2020-02-13
+    </span>
   </li>
 </AbsenceInfo>
 `;

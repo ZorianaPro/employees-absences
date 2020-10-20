@@ -52,8 +52,8 @@ describe('AbsenceInfo', () => {
       });
 
       it('renders absence with today word', () => {
-        expect(absenceInfo.find('.Absence-Info p').text())
-          .toEqual('is on vacation today');
+        expect(absenceInfo.find('.Absence-Info .Absence-Info-Date').text())
+          .toEqual('today');
       });
     });
 
@@ -72,8 +72,8 @@ describe('AbsenceInfo', () => {
       });
 
       it('renders absence with range', () => {
-        expect(absenceInfo.find('.Absence-Info p').text())
-          .toEqual('is on vacation from 2020-01-13 to 2020-02-13');
+        expect(absenceInfo.find('.Absence-Info .Absence-Info-Date').text())
+          .toEqual('from 2020-01-13 to 2020-02-13');
       });
     });
   });

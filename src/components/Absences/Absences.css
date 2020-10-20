@@ -5,11 +5,24 @@
   padding: 2.5em 0 9em;
   display: flex;
   margin: 2em 0;
+  flex-wrap: wrap;
+}
+
+.Absences .Absences-Container-Left {
+  position: relative;
+  width: 30em;
+}
+
+.Absences .Absences-Container-Fixed {
+  position: fixed;
 }
 
 .Absences .react-calendar {
   width: 30em;
   max-height: 20em;
+  border: none;
+  box-shadow: 0 0.125em 0.75em 0 rgba(21, 22, 26, 0.15);
+  border-radius: 0.8em;
 }
 
 .Absence {
@@ -17,9 +30,16 @@
   flex-direction: row;
   align-items: center;
   margin: 0 2em 1em 2em;
-  border: 1px solid var(--colorRaisinBlack);
+  box-shadow: 0 0.125em 0.75em 0 rgba(21, 22, 26, 0.15);
   border-radius: 0.5em;
   cursor: pointer;
+  padding: 1em;
+  transition: all 200ms ease-in;
+}
+
+.Absence:hover {
+  box-shadow: 0 0.5em 1.5em 0 rgba(21, 22, 26, 0.15);
+  transition: all 200ms ease-in;
 }
 
 .Absence .Absence-Info > p{
@@ -31,4 +51,25 @@ li {
   padding: 0;
   display: block;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorRaisinBlack);
+}
+
+.Absences .Download-Button {
+  cursor: pointer;
+  margin: 2em 0;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0.125em 0.75em 0 rgba(21, 22, 26, 0.15);
+  border-radius: 0.5em;
+  padding: 1em;
+  transition: all 200ms ease-in;
+}
+
+.Absences .Download-Button:hover {
+  box-shadow: 0 0.5em 1.5em 0 rgba(21, 22, 26, 0.15);
+  transition: all 200ms ease-in;
 }

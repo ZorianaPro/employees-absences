@@ -1,10 +1,13 @@
 ## CHANGELOG.md
 
+## 1.9.0
+* Add some styles to make it look pretty
+
 ## 1.8.0
 * Install moment package (calendar works best with it)
 * Finish tests
 ####TODO:
-* [ ] Make it look pretty
+* [X] Make it look pretty
 * [ ] Add documentation
 
 ## 1.7.0

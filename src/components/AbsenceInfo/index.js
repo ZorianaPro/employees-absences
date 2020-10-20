@@ -8,10 +8,12 @@ const AbsenceInfo = ({
   view
 }) => (
   <li className="Absence-Info">
-    <p>is on { type }
+    <p>is { type === 'sickness' ? 'sick' : 'on vacation' }</p>
+    <span className="Absence-Info-Date">
       { view === 'day'
-        ? ' today'
-        : ` from ${startDate} to ${endDate}` }</p>
+        ? 'today'
+        : `from ${startDate} to ${endDate}` }
+    </span>
   </li>
 );
 
