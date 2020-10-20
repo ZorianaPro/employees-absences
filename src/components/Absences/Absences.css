@@ -4,6 +4,7 @@
   width: 100%;
   padding: 2.5em 0 9em;
   display: flex;
+  margin: 2em 0;
 }
 
 .Absences .react-calendar {

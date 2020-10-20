@@ -10,7 +10,6 @@ exports[`AbsenceInfo renders as expected 1`] = `
 >
   <li
     className="Absence-Info"
-    key="absenceInfo-1"
   >
     <p>
       is on 

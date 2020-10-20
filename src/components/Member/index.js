@@ -35,7 +35,7 @@ const Member = ({
       style={{ backgroundColor: colors[Math.min(id, 10)] }}>
       <span>{ name[0] }</span>
     </div>
-    <p>{ name }</p>
+    <p className="Member-Name">{ name }</p>
   </div>
 );
 

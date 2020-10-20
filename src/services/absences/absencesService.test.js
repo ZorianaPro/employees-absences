@@ -66,7 +66,7 @@ describe('absences service', () => {
   describe('getByDate()', () => {
     let absences;
     describe('give date in between', () => {
-      const date = '2017-01-14';
+      const date = '2015-01-14';
       beforeEach(() => {
         absences = absencesService.getByDate(list, date);
       });
@@ -74,7 +74,7 @@ describe('absences service', () => {
       it('returns absences', () => {
         expect(absences[0])
           .toEqual(expect.objectContaining({
-            'id': 1
+            'id': 3
           }));
       });
     });

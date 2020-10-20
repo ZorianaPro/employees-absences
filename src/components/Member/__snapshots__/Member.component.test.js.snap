@@ -22,7 +22,9 @@ exports[`Member renders as expected 1`] = `
         Z
       </span>
     </div>
-    <p>
+    <p
+      className="Member-Name"
+    >
       Zozo
     </p>
   </div>

@@ -1,8 +1,18 @@
 import absences from '../../support/absences';
 import membersService from '../members';
+import moment from 'moment';
 
 export const list = () =>
   absences.payload;
+
+export const listWithMoment = () =>
+  list().map((absence) => {
+    return {
+      ...absence,
+      startDate: moment(absence.startDate),
+      endDate: moment(absence.endDate)
+    };
+  });
 
 export const listWithMembers = (list) =>
   list.map((event) => {
@@ -21,22 +31,23 @@ export const get = (id) =>
 
 export const getByDate = (list, date) =>
   list.filter((absence) =>
-    new Date(date).getTime() >= new Date(absence.startDate).getTime()
-    && new Date(date).getTime() <= new Date(absence.endDate).getTime()
+    moment(date).isBetween(moment(absence.startDate), moment(absence.endDate))
+    || moment(date).unix() === moment(absence.startDate).unix()
+    || moment(date).unix() === moment(absence.endDate).unix()
   ) || null;
 
 export const getByYear = (list, date) =>
   list.filter((absence) =>
-    new Date(absence.startDate).getFullYear() === new Date(date).getFullYear()
-    || new Date(absence.endDate).getFullYear() === new Date(date).getFullYear()
+    moment(absence.startDate).year() === moment(date).year()
+    || moment(absence.endDate).year() === moment(date).year()
   ) || null;
 
 export const getByMonth = (list, date) =>
   list.filter((absence) =>
-    (new Date(absence.startDate).getMonth() === new Date(date).getMonth()
-      && new Date(absence.startDate).getFullYear() === new Date(date).getFullYear())
-    || (new Date(absence.endDate).getMonth() === new Date(date).getMonth()
-    && new Date(absence.endDate).getFullYear() === new Date(date).getFullYear())
+    (moment(absence.startDate).month() === moment(date).month()
+      && moment(absence.startDate).year() === moment(date).year())
+    || (moment(absence.endDate).month() === moment(date).month()
+    && moment(absence.endDate).year() === moment(date).year())
   ) || null;
 
 export const getByUser = (list, userId) =>
@@ -48,6 +59,7 @@ export default {
   get,
   list,
   listWithMembers,
+  listWithMoment,
   getByDate,
   getByYear,
   getByMonth,

@@ -51,12 +51,31 @@ const Absences = () => {
   }, [resetState]);
 
   useEffect(() => {
-    const responceAbsences = absencesService.list();
+    const responceAbsences = absencesService.listWithMoment();
     setAbsences(responceAbsences);
   }, []);
 
   useEffect(() => {
-    const searchArray = location.search.split('=');
+    let absencesToShow;
+    switch (selectedView) {
+      case 'month':
+        absencesToShow = absencesService.getByMonth(absences, activeStartDate);
+        break;
+      case 'year':
+        absencesToShow = absencesService.getByYear(absences, activeStartDate);
+        break;
+      case 'day':
+        absencesToShow = absencesService.getByDate(absences, activeStartDate);
+        break;
+      default:
+        absencesToShow = absencesService.listWithMoment();
+    }
+    const absencesWithMembers = absencesService.listWithMembers(absencesToShow);
+    setAbsencesToShow(absencesWithMembers);
+  }, [absences, selectedView, activeStartDate]);
+
+  useEffect(() => {
+    const searchArray = window.location.search.split('=');
     if (searchArray) {
       const userId = searchArray[1] * 1;
       const member = membersService.get(userId);
@@ -77,25 +96,6 @@ const Absences = () => {
     }
   }, [activeMember, absences]);
 
-  useEffect(() => {
-    let absencesToShow;
-    switch (selectedView) {
-      case 'month':
-        absencesToShow = absencesService.getByMonth(absences, activeStartDate);
-        break;
-      case 'year':
-        absencesToShow = absencesService.getByYear(absences, activeStartDate);
-        break;
-      case 'day':
-        absencesToShow = absencesService.getByDate(absences, activeStartDate);
-        break;
-      default:
-        absencesToShow = absencesService.list();
-    }
-    const absencesWithMembers = absencesService.listWithMembers(absencesToShow);
-    setAbsencesToShow(absencesWithMembers);
-  }, [absences, selectedView, activeStartDate]);
-
   return (
     <div className="Absences">
       <div onClick={ downloadICal }>
@@ -106,7 +106,6 @@ const Absences = () => {
           onClickDay={ onClickDay }
           onActiveStartDateChange={ onActiveStartDateChange }
           defaultActiveStartDate={ new Date(2017, 0, 1) }
-          showWeekNumbers
         />
         <div className="Absences-List">
           {
@@ -125,7 +124,7 @@ const Absences = () => {
                     name={ absence.user[0].name }
                   />
                   <AbsenceInfo
-                    id={ absence.id }
+                    key={ `absenceInfo-${key}` }
                     type={ absence.type }
                     startDate={ absence.startDate }
                     endDate={ absence.endDate }
@@ -155,11 +154,11 @@ const Absences = () => {
               activeMemberAbsences.length > 0
               && activeMemberAbsences.map((absence, key) =>
                 <AbsenceInfo
-                  id={ key }
+                  key={ `absenceInfo-${key}` }
                   type={ absence.type }
                   startDate={ absence.startDate }
                   endDate={ absence.endDate }
-                  view={ selectedView }
+                  view={ 'month' }
                 />
               )
             }

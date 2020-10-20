@@ -1,5 +1,12 @@
 ## CHANGELOG.md
 
+## 1.8.0
+* Install moment package (calendar works best with it)
+* Finish tests
+####TODO:
+* [ ] Make it look pretty
+* [ ] Add documentation
+
 ## 1.7.0
 * Remove moment package
 
@@ -10,9 +17,7 @@
 ## 1.6.0
 * Add tests
 #####TODO:
-* [ ] Test Absence component
-* [ ] Make it look pretty
-* [ ] Add documentation
+* [X] Test Absence component
 
 ## 1.5.0
 * Add router
