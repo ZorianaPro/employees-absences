@@ -4,3 +4,8 @@
   flex-direction: column;
   align-items: flex-end;
 }
+
+.Absence-Info.Absence-Info--isLinesSeparated {
+  padding: 0.5em 0;
+  box-shadow: 0 3px 0 -2px rgba(21, 22, 26, 0.15);
+}

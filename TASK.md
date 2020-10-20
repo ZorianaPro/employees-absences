@@ -61,4 +61,4 @@ Feedback:
 2. I would recommend, to not specify how you want to open absences of user or absences by time range
 I think that what owner wants is to be able to open them, and how he is able to do it, let developer decide
 3. Would be cool to actually have a design, because it's not so easy to stop the task, and I have nothing to
-ase my UI on
+base my UI on

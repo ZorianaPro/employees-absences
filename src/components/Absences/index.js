@@ -142,7 +142,7 @@ const Absences = () => {
           }
           {
             absencesToShow.length === 0
-            && <p>No absences this {selectedView}</p>
+            && <div>No absences this {selectedView}</div>
           }
         </div>
       </div>
@@ -166,6 +166,7 @@ const Absences = () => {
                   startDate={ absence.startDate }
                   endDate={ absence.endDate }
                   view={ 'month' }
+                  isLinesSeparated
                 />
               )
             }

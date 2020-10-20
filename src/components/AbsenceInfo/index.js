@@ -5,10 +5,11 @@ const AbsenceInfo = ({
   type,
   startDate,
   endDate,
-  view
+  view,
+  isLinesSeparated = false
 }) => (
-  <li className="Absence-Info">
-    <p>is { type === 'sickness' ? 'sick' : 'on vacation' }</p>
+  <li className={ `Absence-Info ${isLinesSeparated ? 'Absence-Info--isLinesSeparated' : ''}` }>
+    <span>is { type === 'sickness' ? 'sick' : 'on vacation' }</span>
     <span className="Absence-Info-Date">
       { view === 'day'
         ? 'today'

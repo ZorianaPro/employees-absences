@@ -1,14 +1,18 @@
 ## CHANGELOG.md
 
+## 1.10.0
+* Add documentation
+* Make it responsive
+
 ## 1.9.0
 * Add some styles to make it look pretty
 
 ## 1.8.0
 * Install moment package (calendar works best with it)
 * Finish tests
-####TODO:
+######TODO:
 * [X] Make it look pretty
-* [ ] Add documentation
+* [X] Add documentation
 
 ## 1.7.0
 * Remove moment package
@@ -19,7 +23,7 @@
 
 ## 1.6.0
 * Add tests
-#####TODO:
+######TODO:
 * [X] Test Absence component
 
 ## 1.5.0
@@ -33,7 +37,7 @@
 * Get events based on calendar range
 * Add Members and Absence components
 * Add more functions to absences service
-#####TODO:
+######TODO:
   * [X] Add tests to Members and Absence components
   * [X] Open user to see all events
   * [X] Test functions in absences service
@@ -42,7 +46,7 @@
   
 ## 1.3.0
 * Generate .ica file to download
-#####TODO:
+######TODO:
   * [X] FIX: Lines not delimited by CRLF sequence
   * [X] test iCalendar service
   * [X] test listWithMembers function in absence service

@@ -2,6 +2,15 @@
   "name": "employees-abstences",
   "version": "1.9.0",
   "private": true,
+  "author": {
+    "name": "Zoriana Lesyk",
+    "url": "https://github.com/ZorianaPro",
+    "email": "zoryanalesyk@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ZorianaPro/employees-absences.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "react": "^16.14.0",
@@ -11,7 +20,6 @@
   "scripts": {
     "build": "react-scripts build",
     "coverage:ci": "CI=true npm test -- --ci --coverage",
-    "eject": "react-scripts eject",
     "lint": "eslint --ext js,jsx src/",
     "lint:ci": "CI=true eslint --format junit -o test-results/eslint/results.xml --ext js,jsx src/",
     "start": "react-scripts start",

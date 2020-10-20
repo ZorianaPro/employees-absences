@@ -29,12 +29,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 2em 1em 2em;
+  margin: 0 0 1em 0;
   box-shadow: 0 0.125em 0.75em 0 rgba(21, 22, 26, 0.15);
   border-radius: 0.5em;
   cursor: pointer;
   padding: 1em;
   transition: all 200ms ease-in;
+  justify-content: space-between;
 }
 
 .Absence:hover {
@@ -72,4 +73,34 @@ a {
 .Absences .Download-Button:hover {
   box-shadow: 0 0.5em 1.5em 0 rgba(21, 22, 26, 0.15);
   transition: all 200ms ease-in;
+}
+
+.Absences .Absences-List {
+  margin: 0 2em;
+  width: 45%;
+}
+
+@media all and (max-width: 1024px) {
+  .Absences .Absences-Container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .Absences .Absences-Container-Left {
+    width: 100%;
+    position: relative;
+  }
+
+  .Absences .Absences-Container-Fixed {
+    position: relative;
+  }
+
+  .Absences .react-calendar {
+    width: 100%;
+  }
+
+  .Absences .Absences-List {
+    margin: 1em 0;
+    width: 100%;
+  }
 }

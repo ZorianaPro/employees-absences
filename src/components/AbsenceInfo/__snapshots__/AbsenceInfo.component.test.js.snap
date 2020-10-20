@@ -9,12 +9,12 @@ exports[`AbsenceInfo renders as expected 1`] = `
   view="month"
 >
   <li
-    className="Absence-Info"
+    className="Absence-Info "
   >
-    <p>
+    <span>
       is 
       on vacation
-    </p>
+    </span>
     <span
       className="Absence-Info-Date"
     >

@@ -40,4 +40,3 @@ jobs:
       with:
         name: Jest
         path: test-results/jest
-

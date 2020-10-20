@@ -32,7 +32,7 @@ const Member = ({
   <div className="Member"
     key={ `user-${userId}` }>
     <div className="Member-Avatar"
-      style={{ backgroundColor: colors[Math.min(id, 10)] }}>
+      style={{ backgroundColor: colors[id <= 20 ? id : Math.min(Math.ceil(id / 2), 20) ] }}>
       <span>{ name[0] }</span>
     </div>
     <p className="Member-Name">{ name }</p>

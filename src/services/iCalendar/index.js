@@ -76,6 +76,5 @@ export default {
   pad,
   formatDate,
   createICalFileContent,
-  downloadBlob,
   link
 };
