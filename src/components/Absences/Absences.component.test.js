@@ -7,7 +7,7 @@ import { shallow, mount } from 'enzyme';
 describe('Absences', () => {
   let absencesComponent;
   beforeEach(() => {
-    absencesComponent = mount(
+    absencesComponent = shallow(
       <Router>
         <Absences/>
       </Router>
@@ -15,8 +15,8 @@ describe('Absences', () => {
   });
 
   it('renders without crashing', () => {
-    expect(mount.bind(
-      mount,
+    expect(shallow.bind(
+      shallow,
       <Router>
         <Absences />
       </Router>
