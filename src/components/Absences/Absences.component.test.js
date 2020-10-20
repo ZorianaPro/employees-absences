@@ -73,14 +73,9 @@ describe('Absences', () => {
           .toBe(true);
       });
 
-      it('renders correct user incide', () => {
+      it('renders correct user inside', () => {
         expect(absencesComponent.find('.Overlay .Member .Member-Name').text())
           .toEqual(member.name);
-      });
-
-      it('renders as expected', () => {
-        expect(absencesComponent.find('.Absences'))
-          .toMatchSnapshot();
       });
     });
 
