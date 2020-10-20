@@ -1,5 +1,5 @@
 [Employees absences application](https://github.com/ZorianaPro/employees-absences)<br/>
-[Task](/TASK.md)<br/>
+See [Task](/TASK.md)<br/>
 Developed by [Zoriana Lesyk](https://github.com/ZorianaPro) <br/>
 
 React SPA.
