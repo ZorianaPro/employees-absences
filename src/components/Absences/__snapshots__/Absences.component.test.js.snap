@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Absences renders as expected 1`] = `null`;
-
-exports[`Absences url params if there is valid user id in url renders as expected 1`] = `
+exports[`Absences renders as expected 1`] = `
 <div
   className="Absences"
 >
@@ -15,7 +13,6 @@ exports[`Absences url params if there is valid user id in url renders as expecte
     className="Absences-Container"
   >
     <Calendar
-      defaultActiveStartDate={2016-12-31T23:00:00.000Z}
       maxDetail="month"
       minDetail="century"
       onActiveStartDateChange={[Function]}
@@ -23,6 +20,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
       returnValue="start"
       showNavigation={true}
       showNeighboringMonth={true}
+      value={2016-12-31T23:00:00.000Z}
     >
       <div
         className="react-calendar"
@@ -113,6 +111,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
             onMouseLeave={null}
             onMouseOver={null}
             showNeighboringMonth={true}
+            value={2016-12-31T23:00:00.000Z}
             valueType="day"
           >
             <div
@@ -300,6 +299,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                     onMouseLeave={null}
                     onMouseOver={null}
                     showNeighboringMonth={true}
+                    value={2016-12-31T23:00:00.000Z}
                     valueType="day"
                   >
                     <TileGroup
@@ -318,6 +318,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                       onMouseOver={null}
                       start={-5}
                       tile={[Function]}
+                      value={2016-12-31T23:00:00.000Z}
                       valueType="day"
                     >
                       <Flex
@@ -792,6 +793,11 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                             classes={
                               Array [
                                 "react-calendar__tile",
+                                "react-calendar__tile--active",
+                                "react-calendar__tile--range",
+                                "react-calendar__tile--rangeStart",
+                                "react-calendar__tile--rangeEnd",
+                                "react-calendar__tile--rangeBothEnds",
                               ]
                             }
                             currentMonthIndex={0}
@@ -815,6 +821,11 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                               classes={
                                 Array [
                                   "react-calendar__tile",
+                                  "react-calendar__tile--active",
+                                  "react-calendar__tile--range",
+                                  "react-calendar__tile--rangeStart",
+                                  "react-calendar__tile--rangeEnd",
+                                  "react-calendar__tile--rangeBothEnds",
                                   "react-calendar__month-view__days__day",
                                   "react-calendar__month-view__days__day--weekend",
                                   null,
@@ -839,7 +850,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                               view="month"
                             >
                               <button
-                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                className="react-calendar__tile react-calendar__tile--active react-calendar__tile--range react-calendar__tile--rangeStart react-calendar__tile--rangeEnd react-calendar__tile--rangeBothEnds react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
                                 onClick={[Function]}
                                 onFocus={null}
                                 onMouseOver={null}
@@ -3502,32 +3513,32 @@ exports[`Absences url params if there is valid user id in url renders as expecte
     >
       <Link
         className="Absence"
-        key="absence-2351"
+        key="absence-3752"
         to={
           Object {
             "pathname": "/",
-            "search": "?userId=2664",
+            "search": "?userId=644",
           }
         }
       >
         <LinkAnchor
           className="Absence"
-          href="/?userId=2664"
+          href="/?userId=644"
           navigate={[Function]}
         >
           <a
             className="Absence"
-            href="/?userId=2664"
+            href="/?userId=644"
             onClick={[Function]}
           >
             <Member
               id={0}
-              name="Mike"
-              userId={2664}
+              name="Max"
+              userId={644}
             >
               <div
                 className="Member"
-                key="user-2664"
+                key="user-644"
               >
                 <div
                   className="Member-Avatar"
@@ -3544,84 +3555,16 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p
                   className="Member-Name"
                 >
-                  Mike
+                  Max
                 </p>
               </div>
             </Member>
             <AbsenceInfo
-              endDate="2017-01-13"
+              endDate="2017-01-02"
               key="absenceInfo-0"
-              startDate="2017-01-13"
-              type="sickness"
-              view="month"
-            >
-              <li
-                className="Absence-Info"
-              >
-                <p>
-                  is on 
-                  sickness
-                   from 2017-01-13 to 2017-01-13
-                </p>
-              </li>
-            </AbsenceInfo>
-          </a>
-        </LinkAnchor>
-      </Link>
-      <Link
-        className="Absence"
-        key="absence-2521"
-        to={
-          Object {
-            "pathname": "/",
-            "search": "?userId=2664",
-          }
-        }
-      >
-        <LinkAnchor
-          className="Absence"
-          href="/?userId=2664"
-          navigate={[Function]}
-        >
-          <a
-            className="Absence"
-            href="/?userId=2664"
-            onClick={[Function]}
-          >
-            <Member
-              id={1}
-              name="Mike"
-              userId={2664}
-            >
-              <div
-                className="Member"
-                key="user-2664"
-              >
-                <div
-                  className="Member-Avatar"
-                  style={
-                    Object {
-                      "backgroundColor": "#AA4465",
-                    }
-                  }
-                >
-                  <span>
-                    M
-                  </span>
-                </div>
-                <p
-                  className="Member-Name"
-                >
-                  Mike
-                </p>
-              </div>
-            </Member>
-            <AbsenceInfo
-              endDate="2017-01-05"
-              key="absenceInfo-1"
-              startDate="2017-01-05"
+              startDate="2016-12-31"
               type="vacation"
-              view="month"
+              view="day"
             >
               <li
                 className="Absence-Info"
@@ -3629,81 +3572,3559 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-01-05 to 2017-01-05
+                   today
                 </p>
               </li>
             </AbsenceInfo>
           </a>
         </LinkAnchor>
       </Link>
-      <Link
-        className="Absence"
-        key="absence-2634"
-        to={
-          Object {
-            "pathname": "/",
-            "search": "?userId=649",
-          }
-        }
-      >
-        <LinkAnchor
-          className="Absence"
-          href="/?userId=649"
-          navigate={[Function]}
+    </div>
+  </div>
+  <Redirect
+    to="/"
+  >
+    <Lifecycle
+      onMount={[Function]}
+      onUpdate={[Function]}
+      to="/"
+    />
+  </Redirect>
+  <SVGSpriteSheet>
+    <svg
+      className="SVGSpriteSheet"
+      id="SVGSpriteSheet"
+    >
+      <XCloseSymbol>
+        <symbol
+          className="XCloseSymbol"
+          id="XCloseSymbol"
+          viewBox="0 0 24 24"
         >
-          <a
-            className="Absence"
-            href="/?userId=649"
-            onClick={[Function]}
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            fill="#727E8B"
+            fillRule="nonzero"
+            id="XCloseSymbol-Path"
+          />
+        </symbol>
+      </XCloseSymbol>
+    </svg>
+  </SVGSpriteSheet>
+</div>
+`;
+
+exports[`Absences url params if there is valid user id in url renders as expected 1`] = `
+<div
+  className="Absences"
+>
+  <div
+    onClick={[Function]}
+  >
+    Download iCal file
+  </div>
+  <div
+    className="Absences-Container"
+  >
+    <Calendar
+      maxDetail="month"
+      minDetail="century"
+      onActiveStartDateChange={[Function]}
+      onClickDay={[Function]}
+      returnValue="start"
+      showNavigation={true}
+      showNeighboringMonth={true}
+      value={2016-12-31T23:00:00.000Z}
+    >
+      <div
+        className="react-calendar"
+      >
+        <Navigation
+          activeStartDate={2016-12-31T23:00:00.000Z}
+          drillUp={[Function]}
+          setActiveStartDate={[Function]}
+          view="month"
+          views={
+            Array [
+              "century",
+              "decade",
+              "year",
+              "month",
+            ]
+          }
+        >
+          <div
+            className="react-calendar__navigation"
+            style={
+              Object {
+                "display": "flex",
+              }
+            }
           >
-            <Member
-              id={2}
-              name="Ines"
-              userId={649}
+            <button
+              aria-label=""
+              className="react-calendar__navigation__arrow react-calendar__navigation__prev2-button"
+              onClick={[Function]}
+              type="button"
+            >
+              «
+            </button>
+            <button
+              aria-label=""
+              className="react-calendar__navigation__arrow react-calendar__navigation__prev-button"
+              onClick={[Function]}
+              type="button"
+            >
+              ‹
+            </button>
+            <button
+              aria-label=""
+              className="react-calendar__navigation__label"
+              disabled={false}
+              onClick={[Function]}
+              style={
+                Object {
+                  "flexGrow": 1,
+                }
+              }
+              type="button"
+            >
+              <span
+                className="react-calendar__navigation__label__labelText react-calendar__navigation__label__labelText--from"
+              >
+                January 2017
+              </span>
+            </button>
+            <button
+              aria-label=""
+              className="react-calendar__navigation__arrow react-calendar__navigation__next-button"
+              onClick={[Function]}
+              type="button"
+            >
+              ›
+            </button>
+            <button
+              aria-label=""
+              className="react-calendar__navigation__arrow react-calendar__navigation__next2-button"
+              onClick={[Function]}
+              type="button"
+            >
+              »
+            </button>
+          </div>
+        </Navigation>
+        <div
+          className="react-calendar__viewContainer"
+          onBlur={null}
+          onMouseLeave={null}
+        >
+          <MonthView
+            activeStartDate={2016-12-31T23:00:00.000Z}
+            hover={null}
+            onClick={[Function]}
+            onMouseLeave={null}
+            onMouseOver={null}
+            showNeighboringMonth={true}
+            value={2016-12-31T23:00:00.000Z}
+            valueType="day"
+          >
+            <div
+              className="react-calendar__month-view "
             >
               <div
-                className="Member"
-                key="user-649"
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                    "display": "flex",
+                  }
+                }
               >
                 <div
-                  className="Member-Avatar"
                   style={
                     Object {
-                      "backgroundColor": "#FFF05A",
+                      "flexGrow": 1,
+                      "width": "100%",
                     }
                   }
                 >
-                  <span>
-                    I
-                  </span>
+                  <Weekdays
+                    calendarType="ISO 8601"
+                    onMouseLeave={null}
+                  >
+                    <Flex
+                      className="react-calendar__month-view__weekdays"
+                      count={7}
+                      onFocus={null}
+                      onMouseOver={null}
+                    >
+                      <div
+                        className="react-calendar__month-view__weekdays"
+                        onFocus={null}
+                        onMouseOver={null}
+                        style={
+                          Object {
+                            "display": "flex",
+                            "flexDirection": undefined,
+                            "flexWrap": "no-wrap",
+                          }
+                        }
+                      >
+                        <div
+                          className="react-calendar__month-view__weekdays__weekday"
+                          key=".$1"
+                          style={
+                            Object {
+                              "flexBasis": "14.285714285714286%",
+                              "marginLeft": null,
+                              "maxWidth": "14.285714285714286%",
+                              "overflow": "hidden",
+                            }
+                          }
+                        >
+                          <abbr
+                            aria-label="Monday"
+                            title="Monday"
+                          >
+                            Mon
+                          </abbr>
+                        </div>
+                        <div
+                          className="react-calendar__month-view__weekdays__weekday"
+                          key=".$2"
+                          style={
+                            Object {
+                              "flexBasis": "14.285714285714286%",
+                              "marginLeft": null,
+                              "maxWidth": "14.285714285714286%",
+                              "overflow": "hidden",
+                            }
+                          }
+                        >
+                          <abbr
+                            aria-label="Tuesday"
+                            title="Tuesday"
+                          >
+                            Tue
+                          </abbr>
+                        </div>
+                        <div
+                          className="react-calendar__month-view__weekdays__weekday"
+                          key=".$3"
+                          style={
+                            Object {
+                              "flexBasis": "14.285714285714286%",
+                              "marginLeft": null,
+                              "maxWidth": "14.285714285714286%",
+                              "overflow": "hidden",
+                            }
+                          }
+                        >
+                          <abbr
+                            aria-label="Wednesday"
+                            title="Wednesday"
+                          >
+                            Wed
+                          </abbr>
+                        </div>
+                        <div
+                          className="react-calendar__month-view__weekdays__weekday"
+                          key=".$4"
+                          style={
+                            Object {
+                              "flexBasis": "14.285714285714286%",
+                              "marginLeft": null,
+                              "maxWidth": "14.285714285714286%",
+                              "overflow": "hidden",
+                            }
+                          }
+                        >
+                          <abbr
+                            aria-label="Thursday"
+                            title="Thursday"
+                          >
+                            Thu
+                          </abbr>
+                        </div>
+                        <div
+                          className="react-calendar__month-view__weekdays__weekday"
+                          key=".$5"
+                          style={
+                            Object {
+                              "flexBasis": "14.285714285714286%",
+                              "marginLeft": null,
+                              "maxWidth": "14.285714285714286%",
+                              "overflow": "hidden",
+                            }
+                          }
+                        >
+                          <abbr
+                            aria-label="Friday"
+                            title="Friday"
+                          >
+                            Fri
+                          </abbr>
+                        </div>
+                        <div
+                          className="react-calendar__month-view__weekdays__weekday"
+                          key=".$6"
+                          style={
+                            Object {
+                              "flexBasis": "14.285714285714286%",
+                              "marginLeft": null,
+                              "maxWidth": "14.285714285714286%",
+                              "overflow": "hidden",
+                            }
+                          }
+                        >
+                          <abbr
+                            aria-label="Saturday"
+                            title="Saturday"
+                          >
+                            Sat
+                          </abbr>
+                        </div>
+                        <div
+                          className="react-calendar__month-view__weekdays__weekday"
+                          key=".$7"
+                          style={
+                            Object {
+                              "flexBasis": "14.285714285714286%",
+                              "marginLeft": null,
+                              "maxWidth": "14.285714285714286%",
+                              "overflow": "hidden",
+                            }
+                          }
+                        >
+                          <abbr
+                            aria-label="Sunday"
+                            title="Sunday"
+                          >
+                            Sun
+                          </abbr>
+                        </div>
+                      </div>
+                    </Flex>
+                  </Weekdays>
+                  <Days
+                    activeStartDate={2016-12-31T23:00:00.000Z}
+                    calendarType="ISO 8601"
+                    hover={null}
+                    onClick={[Function]}
+                    onMouseLeave={null}
+                    onMouseOver={null}
+                    showNeighboringMonth={true}
+                    value={2016-12-31T23:00:00.000Z}
+                    valueType="day"
+                  >
+                    <TileGroup
+                      activeStartDate={2016-12-31T23:00:00.000Z}
+                      calendarType="ISO 8601"
+                      className="react-calendar__month-view__days"
+                      count={7}
+                      currentMonthIndex={0}
+                      dateTransform={[Function]}
+                      dateType="day"
+                      end={36}
+                      hover={null}
+                      offset={0}
+                      onClick={[Function]}
+                      onMouseLeave={null}
+                      onMouseOver={null}
+                      start={-5}
+                      tile={[Function]}
+                      value={2016-12-31T23:00:00.000Z}
+                      valueType="day"
+                    >
+                      <Flex
+                        className="react-calendar__month-view__days"
+                        count={7}
+                        offset={0}
+                        wrap={true}
+                      >
+                        <div
+                          className="react-calendar__month-view__days"
+                          style={
+                            Object {
+                              "display": "flex",
+                              "flexDirection": undefined,
+                              "flexWrap": "wrap",
+                            }
+                          }
+                        >
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2016-12-25T23:00:00.000Z}
+                            key=".$1482706800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={-5}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2016-12-25T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={-5}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="December 26, 2016"
+                                >
+                                  26
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2016-12-26T23:00:00.000Z}
+                            key=".$1482793200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={-4}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2016-12-26T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={-4}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="December 27, 2016"
+                                >
+                                  27
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2016-12-27T23:00:00.000Z}
+                            key=".$1482879600000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={-3}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2016-12-27T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={-3}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="December 28, 2016"
+                                >
+                                  28
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2016-12-28T23:00:00.000Z}
+                            key=".$1482966000000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={-2}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2016-12-28T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={-2}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="December 29, 2016"
+                                >
+                                  29
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2016-12-29T23:00:00.000Z}
+                            key=".$1483052400000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={-1}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2016-12-29T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={-1}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="December 30, 2016"
+                                >
+                                  30
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2016-12-30T23:00:00.000Z}
+                            key=".$1483138800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={0}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2016-12-30T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={0}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="December 31, 2016"
+                                >
+                                  31
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                                "react-calendar__tile--active",
+                                "react-calendar__tile--range",
+                                "react-calendar__tile--rangeStart",
+                                "react-calendar__tile--rangeEnd",
+                                "react-calendar__tile--rangeBothEnds",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2016-12-31T23:00:00.000Z}
+                            key=".$1483225200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={1}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__tile--active",
+                                  "react-calendar__tile--range",
+                                  "react-calendar__tile--rangeStart",
+                                  "react-calendar__tile--rangeEnd",
+                                  "react-calendar__tile--rangeBothEnds",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2016-12-31T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={1}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__tile--active react-calendar__tile--range react-calendar__tile--rangeStart react-calendar__tile--rangeEnd react-calendar__tile--rangeBothEnds react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 1, 2017"
+                                >
+                                  1
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-01T23:00:00.000Z}
+                            key=".$1483311600000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={2}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-01T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={2}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 2, 2017"
+                                >
+                                  2
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-02T23:00:00.000Z}
+                            key=".$1483398000000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={3}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-02T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={3}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 3, 2017"
+                                >
+                                  3
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-03T23:00:00.000Z}
+                            key=".$1483484400000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={4}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-03T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={4}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 4, 2017"
+                                >
+                                  4
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-04T23:00:00.000Z}
+                            key=".$1483570800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={5}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-04T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={5}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 5, 2017"
+                                >
+                                  5
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-05T23:00:00.000Z}
+                            key=".$1483657200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={6}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-05T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={6}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 6, 2017"
+                                >
+                                  6
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-06T23:00:00.000Z}
+                            key=".$1483743600000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={7}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2017-01-06T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={7}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 7, 2017"
+                                >
+                                  7
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-07T23:00:00.000Z}
+                            key=".$1483830000000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={8}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2017-01-07T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={8}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 8, 2017"
+                                >
+                                  8
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-08T23:00:00.000Z}
+                            key=".$1483916400000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={9}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-08T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={9}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 9, 2017"
+                                >
+                                  9
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-09T23:00:00.000Z}
+                            key=".$1484002800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={10}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-09T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={10}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 10, 2017"
+                                >
+                                  10
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-10T23:00:00.000Z}
+                            key=".$1484089200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={11}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-10T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={11}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 11, 2017"
+                                >
+                                  11
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-11T23:00:00.000Z}
+                            key=".$1484175600000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={12}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-11T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={12}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 12, 2017"
+                                >
+                                  12
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-12T23:00:00.000Z}
+                            key=".$1484262000000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={13}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-12T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={13}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 13, 2017"
+                                >
+                                  13
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-13T23:00:00.000Z}
+                            key=".$1484348400000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={14}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2017-01-13T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={14}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 14, 2017"
+                                >
+                                  14
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-14T23:00:00.000Z}
+                            key=".$1484434800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={15}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2017-01-14T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={15}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 15, 2017"
+                                >
+                                  15
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-15T23:00:00.000Z}
+                            key=".$1484521200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={16}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-15T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={16}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 16, 2017"
+                                >
+                                  16
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-16T23:00:00.000Z}
+                            key=".$1484607600000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={17}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-16T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={17}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 17, 2017"
+                                >
+                                  17
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-17T23:00:00.000Z}
+                            key=".$1484694000000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={18}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-17T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={18}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 18, 2017"
+                                >
+                                  18
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-18T23:00:00.000Z}
+                            key=".$1484780400000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={19}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-18T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={19}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 19, 2017"
+                                >
+                                  19
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-19T23:00:00.000Z}
+                            key=".$1484866800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={20}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-19T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={20}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 20, 2017"
+                                >
+                                  20
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-20T23:00:00.000Z}
+                            key=".$1484953200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={21}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2017-01-20T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={21}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 21, 2017"
+                                >
+                                  21
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-21T23:00:00.000Z}
+                            key=".$1485039600000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={22}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2017-01-21T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={22}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 22, 2017"
+                                >
+                                  22
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-22T23:00:00.000Z}
+                            key=".$1485126000000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={23}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-22T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={23}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 23, 2017"
+                                >
+                                  23
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-23T23:00:00.000Z}
+                            key=".$1485212400000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={24}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-23T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={24}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 24, 2017"
+                                >
+                                  24
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-24T23:00:00.000Z}
+                            key=".$1485298800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={25}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-24T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={25}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 25, 2017"
+                                >
+                                  25
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-25T23:00:00.000Z}
+                            key=".$1485385200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={26}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-25T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={26}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 26, 2017"
+                                >
+                                  26
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-26T23:00:00.000Z}
+                            key=".$1485471600000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={27}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-26T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={27}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 27, 2017"
+                                >
+                                  27
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-27T23:00:00.000Z}
+                            key=".$1485558000000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={28}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2017-01-27T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={28}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 28, 2017"
+                                >
+                                  28
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-28T23:00:00.000Z}
+                            key=".$1485644400000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={29}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  null,
+                                ]
+                              }
+                              date={2017-01-28T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={29}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 29, 2017"
+                                >
+                                  29
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-29T23:00:00.000Z}
+                            key=".$1485730800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={30}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-29T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={30}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 30, 2017"
+                                >
+                                  30
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-30T23:00:00.000Z}
+                            key=".$1485817200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={31}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  null,
+                                ]
+                              }
+                              date={2017-01-30T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={31}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="January 31, 2017"
+                                >
+                                  31
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-01-31T23:00:00.000Z}
+                            key=".$1485903600000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={32}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2017-01-31T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={32}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="February 1, 2017"
+                                >
+                                  1
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-02-01T23:00:00.000Z}
+                            key=".$1485990000000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={33}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2017-02-01T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={33}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="February 2, 2017"
+                                >
+                                  2
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-02-02T23:00:00.000Z}
+                            key=".$1486076400000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={34}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  null,
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2017-02-02T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={34}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="February 3, 2017"
+                                >
+                                  3
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-02-03T23:00:00.000Z}
+                            key=".$1486162800000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={35}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2017-02-03T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={35}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="February 4, 2017"
+                                >
+                                  4
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                          <Day
+                            activeStartDate={2016-12-31T23:00:00.000Z}
+                            calendarType="ISO 8601"
+                            classes={
+                              Array [
+                                "react-calendar__tile",
+                              ]
+                            }
+                            currentMonthIndex={0}
+                            date={2017-02-04T23:00:00.000Z}
+                            key=".$1486249200000"
+                            onClick={[Function]}
+                            onMouseLeave={null}
+                            onMouseOver={null}
+                            point={36}
+                            style={
+                              Object {
+                                "flexBasis": "14.285714285714286%",
+                                "marginLeft": null,
+                                "maxWidth": "14.285714285714286%",
+                                "overflow": "hidden",
+                              }
+                            }
+                          >
+                            <Tile
+                              activeStartDate={2016-12-31T23:00:00.000Z}
+                              classes={
+                                Array [
+                                  "react-calendar__tile",
+                                  "react-calendar__month-view__days__day",
+                                  "react-calendar__month-view__days__day--weekend",
+                                  "react-calendar__month-view__days__day--neighboringMonth",
+                                ]
+                              }
+                              date={2017-02-04T23:00:00.000Z}
+                              formatAbbr={[Function]}
+                              maxDateTransform={[Function]}
+                              minDateTransform={[Function]}
+                              onClick={[Function]}
+                              onMouseLeave={null}
+                              onMouseOver={null}
+                              point={36}
+                              style={
+                                Object {
+                                  "flexBasis": "14.285714285714286%",
+                                  "marginLeft": null,
+                                  "maxWidth": "14.285714285714286%",
+                                  "overflow": "hidden",
+                                }
+                              }
+                              view="month"
+                            >
+                              <button
+                                className="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend react-calendar__month-view__days__day--neighboringMonth"
+                                onClick={[Function]}
+                                onFocus={null}
+                                onMouseOver={null}
+                                style={
+                                  Object {
+                                    "flexBasis": "14.285714285714286%",
+                                    "marginLeft": null,
+                                    "maxWidth": "14.285714285714286%",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <abbr
+                                  aria-label="February 5, 2017"
+                                >
+                                  5
+                                </abbr>
+                              </button>
+                            </Tile>
+                          </Day>
+                        </div>
+                      </Flex>
+                    </TileGroup>
+                  </Days>
                 </div>
-                <p
-                  className="Member-Name"
-                >
-                  Ines
-                </p>
               </div>
-            </Member>
-            <AbsenceInfo
-              endDate="2017-01-11"
-              key="absenceInfo-2"
-              startDate="2017-01-11"
-              type="vacation"
-              view="month"
-            >
-              <li
-                className="Absence-Info"
-              >
-                <p>
-                  is on 
-                  vacation
-                   from 2017-01-11 to 2017-01-11
-                </p>
-              </li>
-            </AbsenceInfo>
-          </a>
-        </LinkAnchor>
-      </Link>
+            </div>
+          </MonthView>
+        </div>
+      </div>
+    </Calendar>
+    <div
+      className="Absences-List"
+    >
       <Link
         className="Absence"
         key="absence-3752"
@@ -3725,7 +7146,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
             onClick={[Function]}
           >
             <Member
-              id={3}
+              id={0}
               name="Max"
               userId={644}
             >
@@ -3737,7 +7158,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                   className="Member-Avatar"
                   style={
                     Object {
-                      "backgroundColor": "#FFCCC9",
+                      "backgroundColor": "#6EA4BF",
                     }
                   }
                 >
@@ -3754,10 +7175,10 @@ exports[`Absences url params if there is valid user id in url renders as expecte
             </Member>
             <AbsenceInfo
               endDate="2017-01-02"
-              key="absenceInfo-3"
+              key="absenceInfo-0"
               startDate="2016-12-31"
               type="vacation"
-              view="month"
+              view="day"
             >
               <li
                 className="Absence-Info"
@@ -3765,7 +7186,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2016-12-31 to 2017-01-02
+                   today
                 </p>
               </li>
             </AbsenceInfo>

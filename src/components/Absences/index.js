@@ -14,7 +14,7 @@ import './Absences.css';
 const Absences = () => {
   const [absences, setAbsences] = useState([]);
   const [absencesToShow, setAbsencesToShow] = useState([]);
-  const [selectedView, setSelectedView] = useState('month');
+  const [selectedView, setSelectedView] = useState('day');
   const [activeStartDate, setActiveStartDate] = useState(new Date(2017, 0, 1));
   const [shouldOpenOverlay, setShouldOpenOverlay] = useState(false);
   const [activeMember, setActiveMember] = useState(null);
@@ -105,7 +105,7 @@ const Absences = () => {
         <Calendar
           onClickDay={ onClickDay }
           onActiveStartDateChange={ onActiveStartDateChange }
-          defaultActiveStartDate={ new Date(2017, 0, 1) }
+          value={ new Date(2017, 0, 1) }
         />
         <div className="Absences-List">
           {
