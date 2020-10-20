@@ -3549,9 +3549,9 @@ exports[`Absences url params if there is valid user id in url renders as expecte
               </div>
             </Member>
             <AbsenceInfo
-              endDate="2017-01-13"
+              endDate={"2017-01-12T23:00:00.000Z"}
               key="absenceInfo-0"
-              startDate="2017-01-13"
+              startDate={"2017-01-12T23:00:00.000Z"}
               type="sickness"
               view="month"
             >
@@ -3561,7 +3561,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   sickness
-                   from 2017-01-13 to 2017-01-13
+                   from 13-01-172017 to 13-01-2017
                 </p>
               </li>
             </AbsenceInfo>
@@ -3617,9 +3617,9 @@ exports[`Absences url params if there is valid user id in url renders as expecte
               </div>
             </Member>
             <AbsenceInfo
-              endDate="2017-01-05"
+              endDate={"2017-01-04T23:00:00.000Z"}
               key="absenceInfo-1"
-              startDate="2017-01-05"
+              startDate={"2017-01-04T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3629,7 +3629,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-01-05 to 2017-01-05
+                   from 05-01-172017 to 05-01-2017
                 </p>
               </li>
             </AbsenceInfo>
@@ -3685,9 +3685,9 @@ exports[`Absences url params if there is valid user id in url renders as expecte
               </div>
             </Member>
             <AbsenceInfo
-              endDate="2017-01-11"
+              endDate={"2017-01-10T23:00:00.000Z"}
               key="absenceInfo-2"
-              startDate="2017-01-11"
+              startDate={"2017-01-10T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3697,7 +3697,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-01-11 to 2017-01-11
+                   from 11-01-172017 to 11-01-2017
                 </p>
               </li>
             </AbsenceInfo>
@@ -3753,9 +3753,9 @@ exports[`Absences url params if there is valid user id in url renders as expecte
               </div>
             </Member>
             <AbsenceInfo
-              endDate="2017-01-02"
+              endDate={"2017-01-01T23:00:00.000Z"}
               key="absenceInfo-3"
-              startDate="2016-12-31"
+              startDate={"2016-12-30T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3765,7 +3765,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2016-12-31 to 2017-01-02
+                   from 31-12-162016 to 02-01-2017
                 </p>
               </li>
             </AbsenceInfo>
@@ -3833,9 +3833,9 @@ exports[`Absences url params if there is valid user id in url renders as expecte
           </Member>
           <ul>
             <AbsenceInfo
-              endDate="2017-02-25"
+              endDate={"2017-02-24T23:00:00.000Z"}
               key="absenceInfo-0"
-              startDate="2017-02-20"
+              startDate={"2017-02-19T23:00:00.000Z"}
               type="sickness"
               view="month"
             >
@@ -3845,14 +3845,14 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   sickness
-                   from 2017-02-20 to 2017-02-25
+                   from 20-02-172017 to 25-02-2017
                 </p>
               </li>
             </AbsenceInfo>
             <AbsenceInfo
-              endDate="2017-03-10"
+              endDate={"2017-03-09T23:00:00.000Z"}
               key="absenceInfo-1"
-              startDate="2017-03-10"
+              startDate={"2017-03-09T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3862,14 +3862,14 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-03-10 to 2017-03-10
+                   from 10-03-172017 to 10-03-2017
                 </p>
               </li>
             </AbsenceInfo>
             <AbsenceInfo
-              endDate="2017-03-10"
+              endDate={"2017-03-09T23:00:00.000Z"}
               key="absenceInfo-2"
-              startDate="2017-03-10"
+              startDate={"2017-03-09T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3879,14 +3879,14 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-03-10 to 2017-03-10
+                   from 10-03-172017 to 10-03-2017
                 </p>
               </li>
             </AbsenceInfo>
             <AbsenceInfo
-              endDate="2017-03-13"
+              endDate={"2017-03-12T23:00:00.000Z"}
               key="absenceInfo-3"
-              startDate="2017-03-13"
+              startDate={"2017-03-12T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3896,14 +3896,14 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-03-13 to 2017-03-13
+                   from 13-03-172017 to 13-03-2017
                 </p>
               </li>
             </AbsenceInfo>
             <AbsenceInfo
-              endDate="2017-03-15"
+              endDate={"2017-03-14T23:00:00.000Z"}
               key="absenceInfo-4"
-              startDate="2017-03-14"
+              startDate={"2017-03-13T23:00:00.000Z"}
               type="sickness"
               view="month"
             >
@@ -3913,14 +3913,14 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   sickness
-                   from 2017-03-14 to 2017-03-15
+                   from 14-03-172017 to 15-03-2017
                 </p>
               </li>
             </AbsenceInfo>
             <AbsenceInfo
-              endDate="2017-03-18"
+              endDate={"2017-03-17T23:00:00.000Z"}
               key="absenceInfo-5"
-              startDate="2017-03-16"
+              startDate={"2017-03-15T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3930,14 +3930,14 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-03-16 to 2017-03-18
+                   from 16-03-172017 to 18-03-2017
                 </p>
               </li>
             </AbsenceInfo>
             <AbsenceInfo
-              endDate="2017-03-13"
+              endDate={"2017-03-12T23:00:00.000Z"}
               key="absenceInfo-6"
-              startDate="2017-03-13"
+              startDate={"2017-03-12T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3947,14 +3947,14 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-03-13 to 2017-03-13
+                   from 13-03-172017 to 13-03-2017
                 </p>
               </li>
             </AbsenceInfo>
             <AbsenceInfo
-              endDate="2017-03-11"
+              endDate={"2017-03-10T23:00:00.000Z"}
               key="absenceInfo-7"
-              startDate="2017-03-11"
+              startDate={"2017-03-10T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3964,14 +3964,14 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2017-03-11 to 2017-03-11
+                   from 11-03-172017 to 11-03-2017
                 </p>
               </li>
             </AbsenceInfo>
             <AbsenceInfo
-              endDate="2017-01-02"
+              endDate={"2017-01-01T23:00:00.000Z"}
               key="absenceInfo-8"
-              startDate="2016-12-31"
+              startDate={"2016-12-30T23:00:00.000Z"}
               type="vacation"
               view="month"
             >
@@ -3981,7 +3981,7 @@ exports[`Absences url params if there is valid user id in url renders as expecte
                 <p>
                   is on 
                   vacation
-                   from 2016-12-31 to 2017-01-02
+                   from 31-12-162016 to 02-01-2017
                 </p>
               </li>
             </AbsenceInfo>

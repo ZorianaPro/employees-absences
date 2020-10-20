@@ -14,7 +14,7 @@ exports[`AbsenceInfo renders as expected 1`] = `
     <p>
       is on 
       vacation
-       from 2020-01-13 to 2020-02-13
+       from 13-01-202020 to 13-02-2020
     </p>
   </li>
 </AbsenceInfo>

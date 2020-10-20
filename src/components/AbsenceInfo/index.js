@@ -1,5 +1,6 @@
 import React from 'react';
 import './AbsenceInfo.css';
+import moment from 'moment';
 
 const AbsenceInfo = ({
   type,
@@ -11,7 +12,7 @@ const AbsenceInfo = ({
     <p>is on { type }
       { view === 'day'
         ? ' today'
-        : ` from ${startDate.format('DD/MM/YYYY')} to ${endDate.format('DD/MM/YYYY')}` }</p>
+        : ` from ${moment(startDate).format('DD-MM-YYY')} to ${moment(endDate).format('DD-MM-YYYY')}` }</p>
   </li>
 );
 
